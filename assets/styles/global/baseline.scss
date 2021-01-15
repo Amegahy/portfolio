@@ -4,6 +4,10 @@
     - Description: All stylings for base elements
 ------------------------------------------- */
 
+body {
+    background-color: $body-BG;
+}
+
 // All text styles
 h1,
 h2,
@@ -11,5 +15,5 @@ h3,
 h4,
 p,
 a {
-    
+    color: $Font-Colour;
 }

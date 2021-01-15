@@ -1,1 +1,88 @@
-@import '../thirdparty/bootstrap-grid.css';@import '../global/reset.css';
+/* DOCUMENT INFORMATION
+    - Document: All index.html styling
+    - Author: Alex Megahy
+    - Description: All index.html styling
+------------------------------------------- */
+/* Imports
+------------------------------------------- */
+/* DOCUMENT INFORMATION
+    - Document: All global styling
+    - Author: Alex Megahy
+    - Description: All global baseline styling imports
+------------------------------------------- */
+/* Imports
+------------------------------------------- */
+@import '../thirdparty/bootstrap-grid.css';
+@import '../global/reset.css';
+/* DOCUMENT INFORMATION
+    - Document: All abstract styling
+    - Author: Alex Megahy
+    - Description: All abstract styling imports
+------------------------------------------- */
+/* Imports
+------------------------------------------- */
+/* DOCUMENT INFORMATION
+    - Document: All mixins
+    - Author: Alex Megahy
+    - Description: All mixins for global use
+------------------------------------------- */
+/* DOCUMENT INFORMATION
+    - Document: All variables
+    - Author: Alex Megahy
+    - Description: All variables for global use
+------------------------------------------- */
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../thirdparty/Raleway-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../thirdparty/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../thirdparty/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../thirdparty/Roboto-Regular.ttf") format("truetype");
+}
+/* DOCUMENT INFORMATION
+    - Document: All baseline styling
+    - Author: Alex Megahy
+    - Description: All stylings for base elements
+------------------------------------------- */
+body {
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  color: #000000;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: All structure styling
+    - Author: Alex Megahy
+    - Description: All stylings for the structure of the page
+------------------------------------------- */
+/* DOCUMENT INFORMATION
+    - Document: All welcome banner styling
+    - Author: Alex Megahy
+    - Description: All main page welcome banner styling
+------------------------------------------- */
+.welcome-banner {
+  background-image: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
+  padding: 5em;
+}
+.welcome-banner .wb-heading {
+  background-color: #ffffff;
+  margin: 0 auto;
+  min-width: 40em;
+  padding: 5em;
+  width: 50%;
+}

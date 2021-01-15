@@ -4,12 +4,44 @@
     - Description: All variables for global use
 ------------------------------------------- */
 
+// Font definitions
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('../thirdparty/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway Regular';
+    src: url('../thirdparty/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../thirdparty/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../thirdparty/Roboto-Regular.ttf') format('truetype');
+}
+
 // Core
 $black: #000000;
 $white: #ffffff;
+$lightGrey: #ededed;
 
 // Baseline
-$body-BG: $black;
-$wrapper-BG: $white;
+$body-BG: $white;
 
 // Breakpoints
+
+// Font variables
+$Font-Heading: 'Raleway Regular';
+$Font-Heading-Bold: 'Raleway Bold';
+$Font-Body-Bold: 'Roboto Bold';
+$Font-Body: 'Roboto Regular';
+$Font-Colour: $black;
+
+// Welcome Banner 
+$wb-BG: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
+$wb-Text-BG: $white;
