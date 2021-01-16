@@ -29,6 +29,7 @@
 $black: #000000;
 $white: #ffffff;
 $lightGrey: #ededed;
+$codingGreen: #00D118;
 
 // Baseline
 $body-BG: $white;
@@ -36,12 +37,15 @@ $body-BG: $white;
 // Breakpoints
 
 // Font variables
-$Font-Heading: 'Raleway Regular';
-$Font-Heading-Bold: 'Raleway Bold';
-$Font-Body-Bold: 'Roboto Bold';
-$Font-Body: 'Roboto Regular';
-$Font-Colour: $black;
+$wb-font-heading: 'Courier New', monospace;
+$font-heading: 'Raleway Regular';
+$font-heading-bold: 'Raleway Bold';
+$font-body-bold: 'Roboto Bold';
+$font-body: 'Roboto Regular';
+$font-colour: $black;
 
 // Welcome Banner 
 $wb-BG: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
-$wb-Text-BG: $white;
+$wb-text-BG: $white;
+$wb-heading-colour: $codingGreen;
+$wb-heading-border: .15em solid $codingGreen;

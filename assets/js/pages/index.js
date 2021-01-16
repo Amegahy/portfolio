@@ -1,1 +1,1 @@
-$.getScript('assets/js/components/alert.js');
+$.getScript('assets/js/components/welcome-banner.js');

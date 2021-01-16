@@ -47,6 +47,55 @@
   font-family: "Roboto Regular";
   src: url("../thirdparty/Roboto-Regular.ttf") format("truetype");
 }
+/* Typewriter animation */
+@keyframes typing-wb1 {
+  from {
+    width: 0;
+    border-right: 0.15em solid #00D118;
+  }
+  to {
+    width: 17em;
+    border-right: 0.15em solid #00D118;
+  }
+}
+@keyframes typing-wb2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25.5em;
+  }
+}
+/* Blink caret for typewriter animation */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00D118;
+  }
+}
+/* DOCUMENT INFORMATION
+    - Document: All variables
+    - Author: Alex Megahy
+    - Description: All variables for global use
+------------------------------------------- */
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../thirdparty/Raleway-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../thirdparty/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../thirdparty/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../thirdparty/Roboto-Regular.ttf") format("truetype");
+}
 /* DOCUMENT INFORMATION
     - Document: All baseline styling
     - Author: Alex Megahy
@@ -70,19 +119,38 @@ a {
     - Author: Alex Megahy
     - Description: All stylings for the structure of the page
 ------------------------------------------- */
+/* Hides element */
+.hidden {
+  visibility: hidden;
+}
+
 /* DOCUMENT INFORMATION
     - Document: All welcome banner styling
     - Author: Alex Megahy
     - Description: All main page welcome banner styling
 ------------------------------------------- */
+/* Main welcome banner */
 .welcome-banner {
   background-image: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
   padding: 5em;
+  /* Welcome banner text container */
 }
 .welcome-banner .wb-heading {
-  background-color: #ffffff;
+  animation: typing-wb1 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  font-family: "Courier New", monospace;
+  letter-spacing: 0.15em;
   margin: 0 auto;
-  min-width: 40em;
-  padding: 5em;
-  width: 50%;
+  overflow: hidden;
+  padding: 1em;
+  white-space: nowrap;
+  width: 17em;
+}
+.welcome-banner .wb-heading:nth-of-type(2) {
+  animation: typing-wb2 3.5s 5s steps(30, end), blink-caret 0.5s step-end infinite;
+  border-right: 0.15em solid #00D118;
+  width: 25.5em;
+}
+.welcome-banner .wb-heading h1,
+.welcome-banner .wb-heading h2 {
+  color: #00D118;
 }

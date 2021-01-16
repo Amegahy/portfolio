@@ -3,3 +3,32 @@
     - Author: Alex Megahy
     - Description: All mixins for global use
 ------------------------------------------- */
+
+@import 'variables.scss';
+
+/* Typewriter animation */
+@keyframes typing-wb1 {
+    from { 
+        width: 0;         
+        border-right: $wb-heading-border; 
+    }
+    to { 
+        width: 17em;         
+        border-right: $wb-heading-border; 
+    }
+}
+
+@keyframes typing-wb2 {
+    from { width: 0 }
+    to { width: 25.5em }
+}
+
+/* Blink caret for typewriter animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $wb-heading-colour }
+}
+
+@mixin keyframes ($animation...){
+    animation: $animation;
+}
