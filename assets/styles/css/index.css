@@ -47,7 +47,7 @@
   font-family: "Roboto Regular";
   src: url("../thirdparty/Roboto-Regular.ttf") format("truetype");
 }
-/* Typewriter animation */
+/* Typewriter animation (First heading)*/
 @keyframes typing-wb1 {
   from {
     width: 0;
@@ -58,6 +58,7 @@
     border-right: 0.15em solid #00D118;
   }
 }
+/* Typewriter animation (Second heading)*/
 @keyframes typing-wb2 {
   from {
     width: 0;
@@ -75,6 +76,9 @@
     border-color: #00D118;
   }
 }
+/* Force element right */
+/* Force element left */
+/* Calc width based on number of elements */
 /* DOCUMENT INFORMATION
     - Document: All variables
     - Author: Alex Megahy
@@ -114,6 +118,10 @@ a {
   color: #000000;
 }
 
+section {
+  padding: 2em 0;
+}
+
 /* DOCUMENT INFORMATION
     - Document: All structure styling
     - Author: Alex Megahy
@@ -122,6 +130,18 @@ a {
 /* Hides element */
 .hidden {
   visibility: hidden;
+}
+
+/* Force element right */
+.right {
+  position: absolute;
+  right: 0;
+}
+
+/* Force element left */
+.left {
+  position: absolute;
+  left: 0;
 }
 
 /* DOCUMENT INFORMATION
@@ -153,4 +173,45 @@ a {
 .welcome-banner .wb-heading h1,
 .welcome-banner .wb-heading h2 {
   color: #00D118;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: All jump to styling
+    - Author: Alex Megahy
+    - Description: All stylings for the jump to bar and buttons
+------------------------------------------- */
+/* Jump to container */
+.jumpToCont {
+  position: relative;
+  /* Jump to button */
+  /* Other page link */
+}
+.jumpToCont .jumpTo {
+  display: flex;
+  padding: 1em;
+}
+.jumpToCont .jumpTo::after {
+  content: "";
+  background-image: url("/assets/img/jumpTo/jumpToArrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1em;
+  transform: rotate(90deg);
+  width: 1em;
+}
+.jumpToCont .otherPage::after {
+  transform: rotate(0);
+}
+
+/* DOCUMENT INFORMATION
+    - Document: All topic panel styling
+    - Author: Alex Megahy
+    - Description: All stylings for the topic panels with icon and description
+------------------------------------------- */
+/* Topic panel container */
+.topic-panel {
+  width: calc(99% / 3);
+  display: inline-block;
+  padding: 0.5em;
 }

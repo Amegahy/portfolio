@@ -1,0 +1,13 @@
+/* DOCUMENT INFORMATION
+    - Document: All topic panel styling
+    - Author: Alex Megahy
+    - Description: All stylings for the topic panels with icon and description
+------------------------------------------- */
+
+/* Topic panel container */
+.topic-panel {
+    @include calc-width(3);
+
+    display: inline-block;
+    padding: .5em;
+}
