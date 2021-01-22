@@ -6,8 +6,6 @@
 
 /* Topic panel container */
 .topic-panel {
-    @include calc-width(3);
-
     display: inline-block;
     padding: .5em;
 }

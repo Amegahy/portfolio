@@ -45,8 +45,3 @@
     position: absolute;
     left: $left;
 }
-
-/* Calc width based on number of elements */
-@mixin calc-width($NoOfElements){
-    width: calc(99% / #{$NoOfElements});
-}

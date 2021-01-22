@@ -78,7 +78,6 @@
 }
 /* Force element right */
 /* Force element left */
-/* Calc width based on number of elements */
 /* DOCUMENT INFORMATION
     - Document: All variables
     - Author: Alex Megahy
@@ -211,7 +210,6 @@ section {
 ------------------------------------------- */
 /* Topic panel container */
 .topic-panel {
-  width: calc(99% / 3);
   display: inline-block;
   padding: 0.5em;
 }
