@@ -1,0 +1,23 @@
+/* DOCUMENT INFORMATION
+    - Document: All baseline styling
+    - Author: Alex Megahy
+    - Description: All stylings for base elements
+------------------------------------------- */
+
+body {
+    background-color: $body-BG;
+}
+
+// All text styles
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    color: $font-colour;
+}
+
+section {
+    padding: 2em 0;
+}

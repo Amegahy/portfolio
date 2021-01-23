@@ -1,0 +1,47 @@
+/* DOCUMENT INFORMATION
+    - Document: All mixins
+    - Author: Alex Megahy
+    - Description: All mixins for global use
+------------------------------------------- */
+
+@import 'variables.scss';
+
+/* Typewriter animation (First heading)*/
+@keyframes typing-wb1 {
+    from { 
+        width: 0;         
+        border-right: $wb-heading-border; 
+    }
+    to { 
+        width: 17em;         
+        border-right: $wb-heading-border; 
+    }
+}
+
+/* Typewriter animation (Second heading)*/
+@keyframes typing-wb2 {
+    from { width: 0 }
+    to { width: 25.5em }
+}
+
+/* Blink caret for typewriter animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $wb-heading-colour }
+}
+
+@mixin keyframes ($animation...){
+    animation: $animation;
+}
+
+/* Force element right */
+@mixin right ($right){
+    position: absolute;
+    right: $right;
+}
+
+/* Force element left */
+@mixin left ($left){
+    position: absolute;
+    left: $left;
+}

@@ -1,0 +1,20 @@
+/* DOCUMENT INFORMATION
+    - Document: All structure styling
+    - Author: Alex Megahy
+    - Description: All stylings for the structure of the page
+------------------------------------------- */
+
+/* Hides element */
+.hidden {
+    visibility: hidden;
+}
+
+/* Force element right */
+.right {
+    @include right(0);
+}
+
+/* Force element left */
+.left {
+    @include left(0);
+}

@@ -1,0 +1,53 @@
+/* DOCUMENT INFORMATION
+    - Document: All variables
+    - Author: Alex Megahy
+    - Description: All variables for global use
+------------------------------------------- */
+
+// Font definitions
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('../thirdparty/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway Regular';
+    src: url('../thirdparty/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../thirdparty/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../thirdparty/Roboto-Regular.ttf') format('truetype');
+}
+
+// Core
+$black: #000000;
+$white: #ffffff;
+$lightGrey: #ededed;
+$codingGreen: #00D118;
+
+// Baseline
+$body-BG: $white;
+
+// Font variables
+$wb-font-heading: 'Courier New', monospace;
+$font-heading: 'Raleway Regular';
+$font-heading-bold: 'Raleway Bold';
+$font-body-bold: 'Roboto Bold';
+$font-body: 'Roboto Regular';
+$font-colour: $black;
+
+// Welcome Banner 
+$wb-BG: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
+$wb-text-BG: $white;
+$wb-heading-colour: $codingGreen;
+$wb-heading-border: .15em solid $codingGreen;
+
+// Buttons
+$btn-dark: #000000ab;
+$btn-white: #ffffffab;

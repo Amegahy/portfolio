@@ -1,0 +1,1 @@
+$.getScript('assets/js/components/welcome-banner.js');
