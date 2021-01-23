@@ -154,14 +154,13 @@ section {
   /* Jump to button */
   /* Other page link */
 }
-.jumpToCont .jumpTo {
+.jumpToCont .jumpTo, .jumpToCont .jumpTo-dark, .jumpToCont .jumpTo-light {
   display: flex;
   font-family: "Roboto Bold";
   padding: 1em;
 }
-.jumpToCont .jumpTo::after {
+.jumpToCont .jumpTo::after, .jumpToCont .jumpTo-dark::after, .jumpToCont .jumpTo-light::after {
   content: "";
-  background-image: url("/assets/img/jumpTo/jumpToArrow.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -169,8 +168,24 @@ section {
   transform: rotate(90deg);
   width: 1em;
 }
-.jumpToCont .jumpTo:hover {
+.jumpToCont .jumpTo:hover, .jumpToCont .jumpTo-dark:hover, .jumpToCont .jumpTo-light:hover {
   cursor: pointer;
+}
+.jumpToCont .jumpTo-light {
+  background-color: #ffffff14;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.jumpToCont .jumpTo-light::after {
+  background-image: url("/assets/img/jumpTo/jumpToArrow.png");
+}
+.jumpToCont .jumpTo-dark {
+  background-color: #00000014;
+  border: 1px solid #000000;
+  color: #000000;
+}
+.jumpToCont .jumpTo-dark::after {
+  background-image: url("/assets/img/jumpTo/jumpToArrow.png");
 }
 .jumpToCont .otherPage::after {
   transform: rotate(0);

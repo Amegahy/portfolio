@@ -14,7 +14,6 @@
         padding: 1em;
         &::after{
             content: "";
-            background-image: url('/assets/img/jumpTo/jumpToArrow.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -25,6 +24,28 @@
 
         &:hover{
             cursor: pointer;
+        }
+
+        &-light{
+            @extend .jumpTo;
+            background-color: $btn-light-BG;
+            border: $btn-light-border;
+            color: $btn-light-color;
+
+            &::after{
+                background-image: url('/assets/img/jumpTo/jumpToArrow.png');
+            }
+        }
+
+        &-dark{
+            @extend .jumpTo;
+            background-color: $btn-dark-BG;
+            border: $btn-dark-border;
+            color: $btn-dark-color;
+
+            &::after{
+                background-image: url('/assets/img/jumpTo/jumpToArrow.png');
+            }
         }
     }
 
