@@ -187,6 +187,7 @@ section {
 }
 .jumpToCont .jumpTo {
   display: flex;
+  font-family: "Roboto Bold";
   padding: 1em;
 }
 .jumpToCont .jumpTo::after {
@@ -198,6 +199,9 @@ section {
   height: 1em;
   transform: rotate(90deg);
   width: 1em;
+}
+.jumpToCont .jumpTo:hover {
+  cursor: pointer;
 }
 .jumpToCont .otherPage::after {
   transform: rotate(0);
@@ -211,5 +215,6 @@ section {
 /* Topic panel container */
 .topic-panel {
   display: inline-block;
+  font-family: "Roboto Regular";
   padding: 0.5em;
 }

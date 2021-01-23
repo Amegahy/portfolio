@@ -34,8 +34,6 @@ $codingGreen: #00D118;
 // Baseline
 $body-BG: $white;
 
-// Breakpoints
-
 // Font variables
 $wb-font-heading: 'Courier New', monospace;
 $font-heading: 'Raleway Regular';
@@ -49,3 +47,7 @@ $wb-BG: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
 $wb-text-BG: $white;
 $wb-heading-colour: $codingGreen;
 $wb-heading-border: .15em solid $codingGreen;
+
+// Buttons
+$btn-dark: #000000ab;
+$btn-white: #ffffffab;
