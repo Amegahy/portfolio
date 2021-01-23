@@ -1,0 +1,189 @@
+/* DOCUMENT INFORMATION
+    - Document: All index.html styling
+    - Author: Alex Megahy
+    - Description: All index.html styling
+------------------------------------------- */
+/* Imports
+------------------------------------------- */
+/* DOCUMENT INFORMATION
+    - Document: All global styling
+    - Author: Alex Megahy
+    - Description: All global baseline styling imports
+------------------------------------------- */
+/* Imports
+------------------------------------------- */
+@import '../thirdparty/bootstrap-grid.css';
+@import '../global/reset.css';
+/* DOCUMENT INFORMATION
+    - Document: All abstract styling
+    - Author: Alex Megahy
+    - Description: All abstract styling imports
+------------------------------------------- */
+/* Imports
+------------------------------------------- */
+/* DOCUMENT INFORMATION
+    - Document: All mixins
+    - Author: Alex Megahy
+    - Description: All mixins for global use
+------------------------------------------- */
+/* DOCUMENT INFORMATION
+    - Document: All variables
+    - Author: Alex Megahy
+    - Description: All variables for global use
+------------------------------------------- */
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../thirdparty/Raleway-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../thirdparty/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../thirdparty/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../thirdparty/Roboto-Regular.ttf") format("truetype");
+}
+/* Typewriter animation (First heading)*/
+@keyframes typing-wb1 {
+  from {
+    width: 0;
+    border-right: 0.15em solid #00D118;
+  }
+  to {
+    width: 17em;
+    border-right: 0.15em solid #00D118;
+  }
+}
+/* Typewriter animation (Second heading)*/
+@keyframes typing-wb2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25.5em;
+  }
+}
+/* Blink caret for typewriter animation */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00D118;
+  }
+}
+/* Force element right */
+/* Force element left */
+/* DOCUMENT INFORMATION
+    - Document: All variables
+    - Author: Alex Megahy
+    - Description: All variables for global use
+------------------------------------------- */
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../thirdparty/Raleway-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../thirdparty/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../thirdparty/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../thirdparty/Roboto-Regular.ttf") format("truetype");
+}
+/* DOCUMENT INFORMATION
+    - Document: All baseline styling
+    - Author: Alex Megahy
+    - Description: All stylings for base elements
+------------------------------------------- */
+body {
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  color: #000000;
+}
+
+section {
+  padding: 2em 0;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: All structure styling
+    - Author: Alex Megahy
+    - Description: All stylings for the structure of the page
+------------------------------------------- */
+/* Hides element */
+.hidden {
+  visibility: hidden;
+}
+
+/* Force element right */
+.right {
+  position: absolute;
+  right: 0;
+}
+
+/* Force element left */
+.left {
+  position: absolute;
+  left: 0;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: All jump to styling
+    - Author: Alex Megahy
+    - Description: All stylings for the jump to bar and buttons
+------------------------------------------- */
+/* Jump to container */
+.jumpToCont {
+  position: relative;
+  /* Jump to button */
+  /* Other page link */
+}
+.jumpToCont .jumpTo {
+  display: flex;
+  font-family: "Roboto Bold";
+  padding: 1em;
+}
+.jumpToCont .jumpTo::after {
+  content: "";
+  background-image: url("/assets/img/jumpTo/jumpToArrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1em;
+  transform: rotate(90deg);
+  width: 1em;
+}
+.jumpToCont .jumpTo:hover {
+  cursor: pointer;
+}
+.jumpToCont .otherPage::after {
+  transform: rotate(0);
+}
+
+/* DOCUMENT INFORMATION
+    - Document: All topic panel styling
+    - Author: Alex Megahy
+    - Description: All stylings for the topic panels with icon and description
+------------------------------------------- */
+/* Topic panel container */
+.topic-panel {
+  display: inline-block;
+  font-family: "Roboto Regular";
+  padding: 0.5em;
+}
