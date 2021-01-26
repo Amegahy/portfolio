@@ -9,9 +9,17 @@
     position: relative;
     /* Jump to button */
     .jumpTo {
+        @include right(0);
+
+        border: 1px solid #333;
         display: flex;
-        font-family: $font-body-bold;
-        padding: 1em;
+        font-family: "Roboto Bold";
+        height: fit-content;
+        justify-content: center;
+        padding: .5em 1.5em;
+        width: fit-content;
+        z-index: 0;
+
         &::after{
             content: "";
             background-position: center;
@@ -19,32 +27,26 @@
             background-size: cover;
             height: 1em;
             transform: rotate(90deg);
+            position: absolute;
             width: 1em;
+        }
+
+        &::before {
+            content: "";
+            background: rgb(123, 33, 33);
+            height: 2.6em;
+            position: absolute;
+            transition: width 1s, height 1s;
+            width: 5.5em;
+            z-index: -1;
+            top: -1px;
         }
 
         &:hover{
             cursor: pointer;
-        }
 
-        &-light{
-            @extend .jumpTo;
-            background-color: $btn-light-BG;
-            border: $btn-light-border;
-            color: $btn-light-color;
-
-            &::after{
-                background-image: url('/assets/img/jumpTo/jumpToArrow.png');
-            }
-        }
-
-        &-dark{
-            @extend .jumpTo;
-            background-color: $btn-dark-BG;
-            border: $btn-dark-border;
-            color: $btn-dark-color;
-
-            &::after{
-                background-image: url('/assets/img/jumpTo/jumpToArrow.png');
+            &::before {
+                width: 0px;
             }
         }
     }
