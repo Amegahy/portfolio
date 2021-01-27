@@ -6,14 +6,17 @@
 
 /* Jump to container */
 .jumpToCont {
+    height: $btn-height;
     position: relative;
+
     /* Jump to button */
     .jumpTo {
         @include right(0);
 
-        border: 1px solid #333;
+        border: $btn-border;
+        color: $btn-color;
         display: flex;
-        font-family: "Roboto Bold";
+        font-family: $btn-font;
         height: fit-content;
         justify-content: center;
         padding: .5em 1.5em;
@@ -33,17 +36,18 @@
 
         &::before {
             content: "";
-            background: rgb(123, 33, 33);
-            height: 2.6em;
+            background: $btn-BG;
+            height: $btn-height;
             position: absolute;
             transition: width 1s, height 1s;
-            width: 5.5em;
+            width: 100%;
             z-index: -1;
-            top: -1px;
+            top: -3px;
         }
 
         &:hover{
             cursor: pointer;
+            background-color: $btn-hover-BG;
 
             &::before {
                 width: 0px;

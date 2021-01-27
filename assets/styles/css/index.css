@@ -117,6 +117,21 @@ a {
   color: #000000;
 }
 
+p {
+  font-family: "Roboto Regular";
+}
+
+a,
+button {
+  font-family: "Roboto Bold";
+}
+
+h1 h2,
+h3,
+h4 {
+  font-family: "Raleway Regular";
+}
+
 section {
   padding: 2em 0;
 }
@@ -181,6 +196,7 @@ section {
 ------------------------------------------- */
 /* Jump to container */
 .jumpToCont {
+  height: 2.9em;
   position: relative;
   /* Jump to button */
   /* Other page link */
@@ -188,7 +204,8 @@ section {
 .jumpToCont .jumpTo {
   position: absolute;
   right: 0;
-  border: 1px solid #333;
+  border: 3px solid #000000;
+  color: #000000;
   display: flex;
   font-family: "Roboto Bold";
   height: -webkit-fit-content;
@@ -211,16 +228,17 @@ section {
 }
 .jumpToCont .jumpTo::before {
   content: "";
-  background: #7b2121;
-  height: 2.6em;
+  background: #ededed;
+  height: 2.9em;
   position: absolute;
   transition: width 1s, height 1s;
-  width: 5.5em;
+  width: 100%;
   z-index: -1;
-  top: -1px;
+  top: -3px;
 }
 .jumpToCont .jumpTo:hover {
   cursor: pointer;
+  background-color: #ffffff;
 }
 .jumpToCont .jumpTo:hover::before {
   width: 0px;

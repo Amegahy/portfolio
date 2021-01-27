@@ -49,6 +49,10 @@ $wb-heading-colour: $codingGreen;
 $wb-heading-border: .15em solid $codingGreen;
 
 // Buttons
-$btn-BG: #00000014;
-$btn-border: 1px solid $black;
+$btn-height: 2.9em;
+$btn-font: $font-body-bold;
+$btn-BG: $lightGrey;
+$btn-border: 3px solid $black;
 $btn-color: $black;
+$btn-hover-BG: $white;
+

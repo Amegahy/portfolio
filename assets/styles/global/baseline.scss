@@ -18,6 +18,22 @@ a {
     color: $font-colour;
 }
 
+p {
+    font-family: $font-body;
+}
+
+a,
+button {
+    font-family: $font-body-bold;
+}
+
+h1
+h2,
+h3,
+h4 {
+    font-family: $font-heading;
+}
+
 section {
     padding: 2em 0;
 }
