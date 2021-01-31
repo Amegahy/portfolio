@@ -8,5 +8,31 @@
 .topic-panel {
     display: inline-block;
     font-family: $font-body;
-    padding: .5em;
+    padding: 1em;
+
+    .topic-panel-icon {
+        height: 100px;
+        margin: 1em auto;
+        padding: 1em;
+        width: 50%;
+        
+        &.uni {
+            @include bg-image("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+        }
+        &.qrious {
+            @include bg-image("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+        }
+        &.dev {
+            @include bg-image("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+        }
+        &.clients {
+            @include bg-image("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+        }
+        &.p-dev {
+            @include bg-image("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+        }
+        &.eager {
+            @include bg-image("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+        }
+    }
 }

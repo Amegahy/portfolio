@@ -45,3 +45,17 @@
     position: absolute;
     left: $left;
 }
+
+/* Full BG Image */
+@mixin bg-image($url){
+    background-image: url($url);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* Full height and width */
+@mixin full($height: 100%, $width: 100%){
+    height: $height;
+    width: $width;
+}

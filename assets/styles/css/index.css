@@ -78,6 +78,8 @@
 }
 /* Force element right */
 /* Force element left */
+/* Full BG Image */
+/* Full height and width */
 /* DOCUMENT INFORMATION
     - Document: All variables
     - Author: Alex Megahy
@@ -158,6 +160,12 @@ section {
   left: 0;
 }
 
+/* Sections */
+.section {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 /* DOCUMENT INFORMATION
     - Document: All welcome banner styling
     - Author: Alex Megahy
@@ -166,10 +174,17 @@ section {
 /* Main welcome banner */
 .welcome-banner {
   background-image: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
+  display: flex;
+  height: 100vh;
   padding: 5em;
+  /* Welcome banner content container */
+}
+.welcome-banner .wb-container {
+  margin: auto;
+  width: 100%;
   /* Welcome banner text container */
 }
-.welcome-banner .wb-heading {
+.welcome-banner .wb-container .wb-heading {
   animation: typing-wb1 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   font-family: "Courier New", monospace;
   letter-spacing: 0.15em;
@@ -179,13 +194,13 @@ section {
   white-space: nowrap;
   width: 17em;
 }
-.welcome-banner .wb-heading:nth-of-type(2) {
+.welcome-banner .wb-container .wb-heading:nth-of-type(2) {
   animation: typing-wb2 3.5s 5s steps(30, end), blink-caret 0.5s step-end infinite;
   border-right: 0.15em solid #00D118;
   width: 25.5em;
 }
-.welcome-banner .wb-heading h1,
-.welcome-banner .wb-heading h2 {
+.welcome-banner .wb-container .wb-heading h1,
+.welcome-banner .wb-container .wb-heading h2 {
   color: #00D118;
 }
 
@@ -204,7 +219,7 @@ section {
 .jumpToCont .jumpTo {
   position: absolute;
   right: 0;
-  border: 3px solid #000000;
+  border: 3px solid #1e3775;
   color: #000000;
   display: flex;
   font-family: "Roboto Bold";
@@ -256,5 +271,47 @@ section {
 .topic-panel {
   display: inline-block;
   font-family: "Roboto Regular";
-  padding: 0.5em;
+  padding: 1em;
+}
+.topic-panel .topic-panel-icon {
+  height: 100px;
+  margin: 1em auto;
+  padding: 1em;
+  width: 50%;
+}
+.topic-panel .topic-panel-icon.uni {
+  background-image: url("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.topic-panel .topic-panel-icon.qrious {
+  background-image: url("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.topic-panel .topic-panel-icon.dev {
+  background-image: url("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.topic-panel .topic-panel-icon.clients {
+  background-image: url("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.topic-panel .topic-panel-icon.p-dev {
+  background-image: url("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.topic-panel .topic-panel-icon.eager {
+  background-image: url("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }

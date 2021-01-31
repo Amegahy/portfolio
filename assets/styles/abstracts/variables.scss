@@ -30,9 +30,17 @@ $black: #000000;
 $white: #ffffff;
 $lightGrey: #ededed;
 $codingGreen: #00D118;
+$fadedBlue: #49609c;
+$darkBlue: #1e3775;
 
 // Baseline
 $body-BG: $white;
+
+// Media queries
+$sm-breakpoint: 576px; 
+$md-breakpoint: 768px; 
+$lg-breakpoint: 992px; 
+$xl-breakpoint: 1200px; 
 
 // Font variables
 $wb-font-heading: 'Courier New', monospace;
@@ -52,7 +60,7 @@ $wb-heading-border: .15em solid $codingGreen;
 $btn-height: 2.9em;
 $btn-font: $font-body-bold;
 $btn-BG: $lightGrey;
-$btn-border: 3px solid $black;
+$btn-border: 3px solid $darkBlue;
 $btn-color: $black;
 $btn-hover-BG: $white;
 
