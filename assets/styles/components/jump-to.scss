@@ -6,25 +6,52 @@
 
 /* Jump to container */
 .jumpToCont {
+    height: $btn-height;
     position: relative;
+
     /* Jump to button */
     .jumpTo {
+        @include right(0);
+
+        border: $btn-border;
+        color: $btn-color;
         display: flex;
-        font-family: $font-body-bold;
-        padding: 1em;
+        font-family: $btn-font;
+        height: fit-content;
+        justify-content: center;
+        padding: .5em 1.5em;
+        width: fit-content;
+        z-index: 0;
+
         &::after{
             content: "";
-            background-image: url('/assets/img/jumpTo/jumpToArrow.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             height: 1em;
             transform: rotate(90deg);
+            position: absolute;
             width: 1em;
+        }
+
+        &::before {
+            content: "";
+            background: $btn-BG;
+            height: $btn-height;
+            position: absolute;
+            transition: width 1s, height 1s;
+            width: 100%;
+            z-index: -1;
+            top: -3px;
         }
 
         &:hover{
             cursor: pointer;
+            background-color: $btn-hover-BG;
+
+            &::before {
+                width: 0px;
+            }
         }
     }
 
