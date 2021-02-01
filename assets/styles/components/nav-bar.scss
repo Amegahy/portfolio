@@ -9,16 +9,51 @@
     background-color: $nav-bar-BG;
     border-radius: 25px 0 0 25px;
     right: 0;
-    padding: .75em .25em;
+    padding: 2em;
     position: fixed;
+    width: 50%;
+    z-index: 1;
 
+    *:not(.menu) {
+        @extend .hidden;
+    }
+
+    /* Nav bar hamburger menu icon */
+    &.menu {
+        border-radius: 50px;
+        height: 100px;
+        padding: 1.5em;
+        width: 100px;
+
+        &::after{
+            @include bg-image("icons/hamburger-icon.png");
+
+            content: "";
+            cursor: pointer;
+            display: block;
+            height: 50px;
+            margin: 25px auto;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            width: 50px;
+        }
+    }
+
+    /* Nav bar items */
+    .nav-bar-item {
+        display: block;
+        font-size: 2.5em;
+    }
+
+    /* Nav bar logo icons */
     .nav-icon {
         cursor: pointer;
-        height: 25px;
-        margin: 25px 0;
-        padding: 10px;
-        width: 25px;
-        
+        height: 75px;
+        margin: 25px auto;
+        padding: 0;
+        width: 75px;
+
         &.github{
             @include bg-image("navbar/github-logo.png");
         }
