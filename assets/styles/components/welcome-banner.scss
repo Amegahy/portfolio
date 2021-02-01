@@ -21,24 +21,24 @@
             // Typerwriter effect
             @include keyframes(typing-wb1 3.5s steps(30, end),blink-caret .5s step-end infinite);
             
-            font-family: $wb-font-heading;
             letter-spacing: .15em;
             margin: 0 auto;
             overflow: hidden;
             padding: 1em;
             white-space: nowrap; 
             width: 17em;
-
+            
             &:nth-of-type(2){
                 @include keyframes(typing-wb2 3.5s 5s steps(30, end),blink-caret .5s step-end infinite);
-
+                
                 border-right: $wb-heading-border; 
                 width: 25.5em;
             }
-
+            
             h1,
             h2{
                 color: $wb-heading-colour;
+                font-family: $wb-font-heading;
             }
         }   
     }

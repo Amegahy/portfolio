@@ -19,39 +19,24 @@
         font-family: $btn-font;
         height: fit-content;
         justify-content: center;
-        padding: .5em 1.5em;
+        padding: .5em 2.5em .5em .5em;
         width: fit-content;
         z-index: 0;
 
         &::after{
+            @include bg-image("jumpTo/jumpToArrow.png");
             content: "";
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 1em;
+
+            height: 1.5em;
+            right: 10px;
             transform: rotate(90deg);
             position: absolute;
             width: 1em;
         }
 
-        &::before {
-            content: "";
-            background: $btn-BG;
-            height: $btn-height;
-            position: absolute;
-            transition: width 1s, height 1s;
-            width: 100%;
-            z-index: -1;
-            top: -3px;
-        }
-
         &:hover{
             cursor: pointer;
             background-color: $btn-hover-BG;
-
-            &::before {
-                width: 0px;
-            }
         }
     }
 

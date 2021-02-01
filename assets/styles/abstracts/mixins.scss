@@ -48,10 +48,10 @@
 
 /* Full BG Image */
 @mixin bg-image($url){
-    background-image: url($url);
+    background-image: url($img-dir + $url);
     background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Full height and width */

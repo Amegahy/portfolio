@@ -128,7 +128,8 @@ button {
   font-family: "Roboto Bold";
 }
 
-h1 h2,
+h1,
+h2,
 h3,
 h4 {
   font-family: "Raleway Regular";
@@ -186,7 +187,6 @@ section {
 }
 .welcome-banner .wb-container .wb-heading {
   animation: typing-wb1 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
-  font-family: "Courier New", monospace;
   letter-spacing: 0.15em;
   margin: 0 auto;
   overflow: hidden;
@@ -202,6 +202,7 @@ section {
 .welcome-banner .wb-container .wb-heading h1,
 .welcome-banner .wb-container .wb-heading h2 {
   color: #00D118;
+  font-family: "Courier New", monospace;
 }
 
 /* DOCUMENT INFORMATION
@@ -226,37 +227,26 @@ section {
   height: -webkit-fit-content;
   height: fit-content;
   justify-content: center;
-  padding: 0.5em 1.5em;
+  padding: 0.5em 2.5em 0.5em 0.5em;
   width: -webkit-fit-content;
   width: fit-content;
   z-index: 0;
 }
 .jumpToCont .jumpTo::after {
-  content: "";
+  background-image: url("/assets/img/jumpTo/jumpToArrow.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 1em;
+  background-size: contain;
+  content: "";
+  height: 1.5em;
+  right: 10px;
   transform: rotate(90deg);
   position: absolute;
   width: 1em;
 }
-.jumpToCont .jumpTo::before {
-  content: "";
-  background: #ededed;
-  height: 2.9em;
-  position: absolute;
-  transition: width 1s, height 1s;
-  width: 100%;
-  z-index: -1;
-  top: -3px;
-}
 .jumpToCont .jumpTo:hover {
   cursor: pointer;
   background-color: #ffffff;
-}
-.jumpToCont .jumpTo:hover::before {
-  width: 0px;
 }
 .jumpToCont .otherPage::after {
   transform: rotate(0);
@@ -280,38 +270,38 @@ section {
   width: 50%;
 }
 .topic-panel .topic-panel-icon.uni {
-  background-image: url("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+  background-image: url("/assets/img/aboutMePanels/newcastle-university-logo.png");
   background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .topic-panel .topic-panel-icon.qrious {
-  background-image: url("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+  background-image: url("/assets/img/aboutMePanels/qrious-logo.png");
   background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .topic-panel .topic-panel-icon.dev {
-  background-image: url("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+  background-image: url("/assets/img/aboutMePanels/web-dev.png");
   background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .topic-panel .topic-panel-icon.clients {
-  background-image: url("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+  background-image: url("/assets/img/aboutMePanels/clients.png");
   background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .topic-panel .topic-panel-icon.p-dev {
-  background-image: url("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+  background-image: url("/assets/img/aboutMePanels/personal-dev.png");
   background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .topic-panel .topic-panel-icon.eager {
-  background-image: url("https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U");
+  background-image: url("/assets/img/aboutMePanels/eager.png");
   background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
