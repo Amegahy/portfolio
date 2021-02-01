@@ -18,3 +18,9 @@
 .left {
     @include left(0);
 }
+
+/* Sections */
+.section {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

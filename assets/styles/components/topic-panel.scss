@@ -8,5 +8,59 @@
 .topic-panel {
     display: inline-block;
     font-family: $font-body;
-    padding: .5em;
+    padding: 1em;
+
+    // About Me panels
+    .about-panel-icon {
+        height: 100px;
+        margin: 1em auto;
+        padding: 1em;
+        width: 50%;
+
+        &.uni {
+            @include bg-image("aboutMePanels/newcastle-university-logo.png");
+        }
+        &.qrious {
+            @include bg-image("aboutMePanels/qrious-logo.png");
+        }
+        &.dev {
+            @include bg-image("aboutMePanels/web-dev.png");
+        }
+        &.clients {
+            @include bg-image("aboutMePanels/clients.png");
+        }
+        &.p-dev {
+            @include bg-image("aboutMePanels/personal-dev.png");
+        }
+        &.eager {
+            @include bg-image("aboutMePanels/eager.png");
+        }
+    }
+
+        // Work panels
+        .work-panel-icon {
+            height: 200px;
+            margin: 1em auto;
+            padding: 1em;
+            width: 100%;
+    
+            &.starry {
+                @include bg-image("workPanels/starry-night.png");
+            }
+            &.accordion {
+                @include bg-image("workPanels/accordion.png");
+            }
+            &.paralax {
+                @include bg-image("workPanels/paralax.png");
+            }
+            &.slideshow {
+                @include bg-image("workPanels/slideshow.png");
+            }
+            &.login {
+                @include bg-image("workPanels/login.png");
+            }
+            &.ajax {
+                @include bg-image("workPanels/ajax.png");
+            }
+        }
 }
