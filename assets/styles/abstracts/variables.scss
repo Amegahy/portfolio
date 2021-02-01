@@ -29,6 +29,7 @@
 $black: #000000;
 $white: #ffffff;
 $lightGrey: #ededed;
+$fadedGrey: #6f6f6f5e;
 $codingGreen: #00D118;
 $fadedBlue: #49609c;
 $darkBlue: #1e3775;
@@ -52,6 +53,9 @@ $font-heading-bold: 'Raleway Bold';
 $font-body-bold: 'Roboto Bold';
 $font-body: 'Roboto Regular';
 $font-colour: $black;
+
+// Navigation Bar
+$nav-bar-BG: $fadedGrey;
 
 // Welcome Banner 
 $wb-BG: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
