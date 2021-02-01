@@ -225,44 +225,86 @@ section {
   font-family: "Roboto Regular";
   padding: 1em;
 }
-.topic-panel .topic-panel-icon {
+.topic-panel .about-panel-icon {
   height: 100px;
   margin: 1em auto;
   padding: 1em;
   width: 50%;
 }
-.topic-panel .topic-panel-icon.uni {
+.topic-panel .about-panel-icon.uni {
   background-image: url("/assets/img/aboutMePanels/newcastle-university-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.topic-panel .topic-panel-icon.qrious {
+.topic-panel .about-panel-icon.qrious {
   background-image: url("/assets/img/aboutMePanels/qrious-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.topic-panel .topic-panel-icon.dev {
+.topic-panel .about-panel-icon.dev {
   background-image: url("/assets/img/aboutMePanels/web-dev.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.topic-panel .topic-panel-icon.clients {
+.topic-panel .about-panel-icon.clients {
   background-image: url("/assets/img/aboutMePanels/clients.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.topic-panel .topic-panel-icon.p-dev {
+.topic-panel .about-panel-icon.p-dev {
   background-image: url("/assets/img/aboutMePanels/personal-dev.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.topic-panel .topic-panel-icon.eager {
+.topic-panel .about-panel-icon.eager {
   background-image: url("/assets/img/aboutMePanels/eager.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.topic-panel .work-panel-icon {
+  height: 200px;
+  margin: 1em auto;
+  padding: 1em;
+  width: 100%;
+}
+.topic-panel .work-panel-icon.starry {
+  background-image: url("/assets/img/workPanels/starry-night.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.topic-panel .work-panel-icon.accordion {
+  background-image: url("/assets/img/workPanels/accordion.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.topic-panel .work-panel-icon.paralax {
+  background-image: url("/assets/img/workPanels/paralax.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.topic-panel .work-panel-icon.slideshow {
+  background-image: url("/assets/img/workPanels/slideshow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.topic-panel .work-panel-icon.login {
+  background-image: url("/assets/img/workPanels/login.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.topic-panel .work-panel-icon.ajax {
+  background-image: url("/assets/img/workPanels/ajax.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

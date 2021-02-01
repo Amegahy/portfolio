@@ -10,7 +10,8 @@
     font-family: $font-body;
     padding: 1em;
 
-    .topic-panel-icon {
+    // About Me panels
+    .about-panel-icon {
         height: 100px;
         margin: 1em auto;
         padding: 1em;
@@ -35,4 +36,31 @@
             @include bg-image("aboutMePanels/eager.png");
         }
     }
+
+        // Work panels
+        .work-panel-icon {
+            height: 200px;
+            margin: 1em auto;
+            padding: 1em;
+            width: 100%;
+    
+            &.starry {
+                @include bg-image("workPanels/starry-night.png");
+            }
+            &.accordion {
+                @include bg-image("workPanels/accordion.png");
+            }
+            &.paralax {
+                @include bg-image("workPanels/paralax.png");
+            }
+            &.slideshow {
+                @include bg-image("workPanels/slideshow.png");
+            }
+            &.login {
+                @include bg-image("workPanels/login.png");
+            }
+            &.ajax {
+                @include bg-image("workPanels/ajax.png");
+            }
+        }
 }
