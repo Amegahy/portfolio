@@ -10,11 +10,11 @@
     cursor: pointer;
     border-radius: 50px;
     display: block;
-    height: 100px;    
-    padding: 1.5em;
+    height: 40px;
+    padding: 7px;
     position: fixed;
     right: 0;
-    width: 100px;
+    width: 40px;
     
     &::after{
         @include bg-image("icons/hamburger-icon.png");
@@ -22,72 +22,137 @@
         content: "";
         cursor: pointer;
         display: block;
-        height: 50px;
-        margin: 25px auto;
+        height: 25px;
+        margin: 8px auto;
         padding: 0;
         position: absolute;
         top: 0;
-        width: 50px;
-    }
-    
-    @media only screen and (min-width: 500px) {
-        display: none;
+        width: 25px;
     }
 }
 
 /* Nav bar container */
 .nav-bar {
     background-color: $nav-bar-BG;
-    display: none;
+    color: $nav-bar-color;
     height: 100%;
     padding: 2em;
     position: fixed;
     width: 100%;
     z-index: 1;
 
-    /* Nav bar items */
-    .nav-bar-item {
-        display: block;
-        font-size: 2.5em;
+    /* Nav bar items container */
+    .nav-bar-items {
+        
+        /* Nav bar items */
+        .nav-bar-item {
+            display: block;
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+
+    /* Nav bar icons container */
+    .nav-bar-icons {
+        display: inline-flex;
+        width: 100%;
+        margin: 0 auto;
+
+        /* Nav bar logo icons */
+        .nav-icon {
+            cursor: pointer;
+            height: 50px;
+            margin: 25px auto;
+            padding: 0;
+            width: 50px;
+
+            &.github{
+                @include bg-image("navbar/github-logo.png");
+            }
+
+            &.codepen{
+                @include bg-image("navbar/codepen-logo.png");
+            }
+
+            &.linkedIn{
+                @include bg-image("navbar/linkedin-logo.jpg");
+            }
+
+            &.facebook{
+                @include bg-image("navbar/facebook-logo.jpg");
+            }
+
+            @media only screen and (min-width: $sm-breakpoint) {
+                height: 30px;
+                margin: 0;
+                width: 30px;
+            }
+        }
     }
 
     /* Close button */
     .close-btn {
-        background-color: $closeBtn-BG;
         color: $closeBtn-color;
-        font-size: 2.5em;
+        font-size: 1.5em;
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+}
 
-        @media only screen and (min-width: 500px) {
+/* Media Queries */
+
+@media only screen and (min-width: $sm-breakpoint) {
+
+    /* Nav bar hamburger menu icon */
+    .hamburger-menu {
+        display: none;
+    }
+
+    /* Nav bar container */
+    .nav-bar {
+        display: block;
+        height: 50px;
+        padding: 0;
+        position: fixed;
+        top: 0;
+
+        /* Nav bar items container */
+        .nav-bar-items {
+
+            @include right(0);
+            align-items: center;
+            display: inline-flex;
+            width: 75%;
+            
+            /* Nav bar items */
+            .nav-bar-item {
+                display: inline;
+                margin: auto;
+                text-align: left;
+            }
+        }
+
+        /* Nav bar icons container */
+        .nav-bar-icons {
+            @include left(0);
+            
+            align-items: center;
+            height: 100%;
+            top: 0;
+            width: 25%;
+
+            /* Nav bar logo icons */
+            .nav-icon {
+                height: 30px;
+                margin: auto;
+                width: 30px;
+            }
+        }
+
+        /* Close button */
+        .close-btn {
             display: none;
         }
-    }
-
-    /* Nav bar logo icons */
-    .nav-icon {
-        cursor: pointer;
-        height: 75px;
-        margin: 25px auto;
-        padding: 0;
-        width: 75px;
-
-        &.github{
-            @include bg-image("navbar/github-logo.png");
-        }
-
-        &.codepen{
-            @include bg-image("navbar/codepen-logo.png");
-        }
-
-        &.linkedIn{
-            @include bg-image("navbar/linkedin-logo.jpg");
-        }
-
-        &.facebook{
-            @include bg-image("navbar/facebook-logo.jpg");
-        }
-    }
-
-    @media only screen and (min-width: 500px) {
-        display: block;
     }
 }
