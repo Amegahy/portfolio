@@ -145,7 +145,7 @@ section {
     - Description: All stylings for the structure of the page
 ------------------------------------------- */
 /* Hides element */
-.hidden {
+.hidden, .nav-bar *:not(.menu) {
   visibility: hidden;
 }
 
@@ -165,6 +165,81 @@ section {
 .section {
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: All nav bar styling
+    - Author: Alex Megahy
+    - Description: All stylings for the nav bar and the icons
+------------------------------------------- */
+/* Nav bar container */
+.nav-bar {
+  background-color: #e2e2e2ab;
+  border-radius: 25px 0 0 25px;
+  right: 0;
+  padding: 2em;
+  position: fixed;
+  width: 50%;
+  z-index: 1;
+  /* Nav bar hamburger menu icon */
+  /* Nav bar items */
+  /* Nav bar logo icons */
+}
+.nav-bar.menu {
+  border-radius: 50px;
+  height: 100px;
+  padding: 1.5em;
+  width: 100px;
+}
+.nav-bar.menu::after {
+  background-image: url("/assets/img/icons/hamburger-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  margin: 25px auto;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
+.nav-bar .nav-bar-item {
+  display: block;
+  font-size: 2.5em;
+}
+.nav-bar .nav-icon {
+  cursor: pointer;
+  height: 75px;
+  margin: 25px auto;
+  padding: 0;
+  width: 75px;
+}
+.nav-bar .nav-icon.github {
+  background-image: url("/assets/img/navbar/github-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav-bar .nav-icon.codepen {
+  background-image: url("/assets/img/navbar/codepen-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav-bar .nav-icon.linkedIn {
+  background-image: url("/assets/img/navbar/linkedin-logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav-bar .nav-icon.facebook {
+  background-image: url("/assets/img/navbar/facebook-logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* DOCUMENT INFORMATION
