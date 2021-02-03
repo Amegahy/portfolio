@@ -32,6 +32,7 @@ $lightGrey: #ededed;
 $codingGreen: #00D118;
 $fadedBlue: #49609c;
 $darkBlue: #1e3775;
+$errorRed: #b50000;
 
 // Baseline
 $body-BG: $white;
@@ -53,6 +54,14 @@ $font-body-bold: 'Roboto Bold';
 $font-body: 'Roboto Regular';
 $font-colour: $black;
 
+<<<<<<< Updated upstream
+=======
+// Navigation Bar
+$nav-bar-BG: $fadedGrey;
+$closeBtn-BG: $errorRed;
+$closeBtn-color: $white;
+
+>>>>>>> Stashed changes
 // Welcome Banner 
 $wb-BG: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
 $wb-text-BG: $white;

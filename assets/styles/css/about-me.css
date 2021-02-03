@@ -168,6 +168,111 @@ section {
 }
 
 /* DOCUMENT INFORMATION
+<<<<<<< Updated upstream
+=======
+    - Document: All nav bar styling
+    - Author: Alex Megahy
+    - Description: All stylings for the nav bar and the icons
+------------------------------------------- */
+/* Nav bar hamburger menu icon */
+.hamburger-menu {
+  background-color: #e2e2e2ab;
+  cursor: pointer;
+  border-radius: 50px;
+  display: block;
+  height: 100px;
+  padding: 1.5em;
+  position: fixed;
+  right: 0;
+  width: 100px;
+}
+.hamburger-menu::after {
+  background-image: url("/assets/img/icons/hamburger-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  margin: 25px auto;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
+@media only screen and (min-width: 500px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+/* Nav bar container */
+.nav-bar {
+  background-color: #e2e2e2ab;
+  display: none;
+  height: 100%;
+  padding: 2em;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  /* Nav bar items */
+  /* Close button */
+  /* Nav bar logo icons */
+}
+.nav-bar .nav-bar-item {
+  display: block;
+  font-size: 2.5em;
+}
+.nav-bar .close-btn {
+  background-color: #b50000;
+  color: #ffffff;
+  font-size: 2.5em;
+}
+@media only screen and (min-width: 500px) {
+  .nav-bar .close-btn {
+    display: none;
+  }
+}
+.nav-bar .nav-icon {
+  cursor: pointer;
+  height: 75px;
+  margin: 25px auto;
+  padding: 0;
+  width: 75px;
+}
+.nav-bar .nav-icon.github {
+  background-image: url("/assets/img/navbar/github-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav-bar .nav-icon.codepen {
+  background-image: url("/assets/img/navbar/codepen-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav-bar .nav-icon.linkedIn {
+  background-image: url("/assets/img/navbar/linkedin-logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nav-bar .nav-icon.facebook {
+  background-image: url("/assets/img/navbar/facebook-logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (min-width: 500px) {
+  .nav-bar {
+    display: block;
+  }
+}
+
+/* DOCUMENT INFORMATION
+>>>>>>> Stashed changes
     - Document: All jump to styling
     - Author: Alex Megahy
     - Description: All stylings for the jump to bar and buttons
