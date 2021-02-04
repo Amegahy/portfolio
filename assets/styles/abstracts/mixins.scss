@@ -45,7 +45,7 @@
     background-image: url($img-dir + $url);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 /* Full height and width */

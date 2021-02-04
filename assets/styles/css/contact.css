@@ -167,7 +167,7 @@ section {
   background-image: url("/assets/img/icons/hamburger-icon.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   content: "";
   cursor: pointer;
   display: block;
@@ -217,25 +217,25 @@ section {
   background-image: url("/assets/img/navbar/github-logo.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .nav-bar .nav-bar-icons .nav-icon.codepen {
   background-image: url("/assets/img/navbar/codepen-logo.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .nav-bar .nav-bar-icons .nav-icon.linkedIn {
   background-image: url("/assets/img/navbar/linkedin-logo.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .nav-bar .nav-bar-icons .nav-icon.facebook {
   background-image: url("/assets/img/navbar/facebook-logo.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 @media only screen and (min-width: 576px) {
   .nav-bar .nav-bar-icons .nav-icon {
@@ -257,6 +257,7 @@ section {
   /* Nav bar hamburger menu icon */
   .hamburger-menu {
     display: none;
+    z-index: 1;
   }
 
   /* Nav bar container */
@@ -313,6 +314,7 @@ section {
   border-radius: 50px;
   color: #ffffff;
   font-family: "Roboto Bold";
+  margin: 1em auto;
   padding: 10px;
 }
 .cta:hover {
@@ -331,6 +333,7 @@ section {
 .topic-panel {
   display: inline-block;
   font-family: "Roboto Regular";
+  height: 100%;
   padding: 1em;
 }
 .topic-panel .about-panel-icon {
@@ -343,77 +346,95 @@ section {
   background-image: url("/assets/img/aboutMePanels/newcastle-university-logo.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .topic-panel .about-panel-icon.qrious {
   background-image: url("/assets/img/aboutMePanels/qrious-logo.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .topic-panel .about-panel-icon.dev {
   background-image: url("/assets/img/aboutMePanels/web-dev.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .topic-panel .about-panel-icon.clients {
   background-image: url("/assets/img/aboutMePanels/clients.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .topic-panel .about-panel-icon.p-dev {
   background-image: url("/assets/img/aboutMePanels/personal-dev.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .topic-panel .about-panel-icon.eager {
   background-image: url("/assets/img/aboutMePanels/eager.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .topic-panel .work-panel-icon {
-  height: 200px;
+  cursor: pointer;
+  height: 165px;
   margin: 1em auto;
-  padding: 1em;
   width: 100%;
+}
+.topic-panel .work-panel-icon:hover .work-panel-hover {
+  display: block;
 }
 .topic-panel .work-panel-icon.starry {
   background-image: url("/assets/img/workPanels/starry-night.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .topic-panel .work-panel-icon.accordion {
   background-image: url("/assets/img/workPanels/accordion.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .topic-panel .work-panel-icon.paralax {
   background-image: url("/assets/img/workPanels/paralax.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .topic-panel .work-panel-icon.slideshow {
   background-image: url("/assets/img/workPanels/slideshow.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .topic-panel .work-panel-icon.login {
   background-image: url("/assets/img/workPanels/login.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .topic-panel .work-panel-icon.ajax {
   background-image: url("/assets/img/workPanels/ajax.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+}
+.topic-panel .work-panel-icon .work-panel-hover {
+  background-color: #1e3775;
+  display: none;
+  height: 100%;
+  opacity: 0.9;
+  padding: 1em;
+}
+.topic-panel .work-panel-icon .work-panel-hover p {
+  color: #ffffff;
+  font-family: "Roboto Bold";
+}
+.topic-panel .work-panel-icon .work-panel-hover .cta {
+  display: block;
+  margin: 20px auto;
 }
