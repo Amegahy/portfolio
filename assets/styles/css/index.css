@@ -58,15 +58,6 @@
     border-right: 0.15em solid #00D118;
   }
 }
-/* Typewriter animation (Second heading)*/
-@keyframes typing-wb2 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 25.5em;
-  }
-}
 /* Blink caret for typewriter animation */
 @keyframes blink-caret {
   from, to {
@@ -320,7 +311,6 @@ section {
   background-image: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
   display: flex;
   height: 100vh;
-  padding: 5em;
   /* Welcome banner content container */
 }
 .welcome-banner .wb-container {
@@ -337,62 +327,31 @@ section {
   white-space: nowrap;
   width: 17em;
 }
-.welcome-banner .wb-container .wb-heading:nth-of-type(2) {
-  animation: typing-wb2 3.5s 5s steps(30, end), blink-caret 0.5s step-end infinite;
-  border-right: 0.15em solid #00D118;
-  width: 25.5em;
-}
-.welcome-banner .wb-container .wb-heading h1,
-.welcome-banner .wb-container .wb-heading h2 {
+.welcome-banner .wb-container .wb-heading h1 {
   color: #00D118;
   font-family: "Courier New", monospace;
 }
 
 /* DOCUMENT INFORMATION
-    - Document: All jump to styling
+    - Document: All cta to styling
     - Author: Alex Megahy
-    - Description: All stylings for the jump to bar and buttons
+    - Description: All stylings for the cta buttons and links
 ------------------------------------------- */
-/* Jump to container */
-.jumpToCont {
-  height: 2.9em;
-  position: relative;
-  /* Jump to button */
-  /* Other page link */
-}
-.jumpToCont .jumpTo {
-  position: absolute;
-  right: 0;
-  border: 3px solid #1e3775;
-  color: #000000;
-  display: flex;
+/* CTA button */
+.cta {
+  background-color: #1e3775;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
   font-family: "Roboto Bold";
-  height: -webkit-fit-content;
-  height: fit-content;
-  justify-content: center;
-  padding: 0.5em 2.5em 0.5em 0.5em;
-  width: -webkit-fit-content;
-  width: fit-content;
-  z-index: 0;
+  margin: 1em auto;
+  padding: 10px;
 }
-.jumpToCont .jumpTo::after {
-  background-image: url("/assets/img/jumpTo/jumpToArrow.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 1.5em;
-  right: 10px;
-  transform: rotate(90deg);
-  position: absolute;
-  width: 1em;
-}
-.jumpToCont .jumpTo:hover {
+.cta:hover {
   cursor: pointer;
   background-color: #ffffff;
-}
-.jumpToCont .otherPage::after {
-  transform: rotate(0);
+  border: 3px solid #1e3775;
+  color: #1e3775;
 }
 
 /* DOCUMENT INFORMATION
@@ -489,4 +448,75 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: All "click on me" stylings
+    - Author: Alex Megahy
+    - Description: All "click on me" stylings for the "About Me" section of home page
+------------------------------------------- */
+/* Main "About Me" container for home page */
+.about-me-container .click-on-me-cont {
+  /* Main text container */
+  /* Clickable picture */
+}
+.about-me-container .click-on-me-cont .click-on-me-text {
+  /* "Click on me" */
+}
+.about-me-container .click-on-me-cont .click-on-me-text .click-on-me {
+  font-family: "Roboto Bold";
+  text-align: center;
+}
+.about-me-container .click-on-me-cont .click-on-me-text .click-on-me::after {
+  background-image: url("/assets/img/icons/arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 20px;
+  margin: 0 auto;
+  transform: rotate(90deg);
+  width: 20px;
+}
+.about-me-container .click-on-me-cont .click-on-me-pic {
+  margin: 0 auto;
+  height: 150px;
+  width: 150px;
+}
+.about-me-container .click-on-me-cont .click-on-me-pic::after {
+  background-image: url("/assets/img/aboutMePics/me-pic-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 576px) {
+  .about-me-container .click-on-me-cont {
+    display: inline-flex;
+    /* Main text container */
+    /* Clickable picture */
+  }
+  .about-me-container .click-on-me-cont .click-on-me-text {
+    width: 50%;
+    /* "Click on me" */
+  }
+  .about-me-container .click-on-me-cont .click-on-me-text .click-on-me {
+    text-align: left;
+  }
+  .about-me-container .click-on-me-cont .click-on-me-text .click-on-me::after {
+    display: inline-block;
+    margin: auto 10px;
+    position: absolute;
+    right: 50%;
+    transform: rotate(0);
+  }
+  .about-me-container .click-on-me-cont .click-on-me-pic {
+    width: 50%;
+  }
 }

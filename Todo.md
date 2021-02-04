@@ -1,2 +1,4 @@
 - Change from em to rem and base off of body
 - Convert all photos to svg
+- use variable fro border radius
+- go over and find common things to turn into mixins and classes

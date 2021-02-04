@@ -70,10 +70,10 @@ $wb-heading-colour: $codingGreen;
 $wb-heading-border: .15em solid $codingGreen;
 
 // Buttons
-$btn-height: 2.9em;
 $btn-font: $font-body-bold;
-$btn-BG: $lightGrey;
-$btn-border: 3px solid $darkBlue;
-$btn-color: $black;
+$btn-BG: $darkBlue;
+$btn-border: 3px solid $white;
+$btn-color: $white;
 $btn-hover-BG: $white;
-
+$btn-hover-border: 3px solid $darkBlue;
+$btn-hover-color: $darkBlue;

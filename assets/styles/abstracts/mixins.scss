@@ -18,12 +18,6 @@
     }
 }
 
-/* Typewriter animation (Second heading)*/
-@keyframes typing-wb2 {
-    from { width: 0 }
-    to { width: 25.5em }
-}
-
 /* Blink caret for typewriter animation */
 @keyframes blink-caret {
     from, to { border-color: transparent }

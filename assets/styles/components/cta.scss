@@ -1,0 +1,23 @@
+/* DOCUMENT INFORMATION
+    - Document: All cta to styling
+    - Author: Alex Megahy
+    - Description: All stylings for the cta buttons and links
+------------------------------------------- */
+
+/* CTA button */
+.cta {
+    background-color: $btn-BG;
+    border: $btn-border;
+    border-radius: 50px;
+    color: $btn-color;
+    font-family: $btn-font;
+    margin: 1em auto;
+    padding: 10px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $btn-hover-BG;
+        border: $btn-hover-border;
+        color: $btn-hover-color;
+    }
+}
