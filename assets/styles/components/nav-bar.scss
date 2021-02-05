@@ -15,6 +15,7 @@
     position: fixed;
     right: 0;
     width: 40px;
+    z-index: 1;
     
     &::after{
         @include bg-image("icons/hamburger-icon.png", cover);
@@ -34,7 +35,6 @@
 /* Nav bar container */
 .nav-bar {
     background-color: $nav-bar-BG;
-    color: $nav-bar-color;
     height: 100%;
     padding: 2em;
     position: fixed;
@@ -46,6 +46,7 @@
         
         /* Nav bar items */
         .nav-bar-item {
+            color: $nav-bar-color;
             display: block;
             font-size: 2em;
             text-align: center;
@@ -107,7 +108,6 @@
     /* Nav bar hamburger menu icon */
     .hamburger-menu {
         display: none;
-        z-index: 1;
     }
 
     /* Nav bar container */

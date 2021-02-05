@@ -5,7 +5,7 @@
 ------------------------------------------- */
 
 /* Main "About Me" container for home page */
-.about-me-container {
+.about-me {
 
     .click-on-me-cont {
 
@@ -52,7 +52,7 @@
 /* Media Queries */
 
 @media only screen and (min-width: $sm-breakpoint) {
-.about-me-container {
+.about-me {
         .click-on-me-cont {
             display: inline-flex;
 

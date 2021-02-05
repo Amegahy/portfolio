@@ -31,8 +31,7 @@ $white: #ffffff;
 $lightGrey: #ededed;
 $fadedGrey: #e2e2e2ab;
 $codingGreen: #00D118;
-$fadedBlue: #49609c;
-$darkBlue: #1e3775;
+$darkBlue: #000b61;
 $errorRed: #b50000;
 
 // Baseline
@@ -56,12 +55,9 @@ $font-body: 'Roboto Regular';
 $font-colour: $black;
 
 // Navigation Bar
-$nav-bar-BG: $fadedGrey;
-$nav-bar-color: $black;
+$nav-bar-BG: $darkBlue;
+$nav-bar-color: $white;
 $closeBtn-color: $white;
-
-// Navigation Bar
-$nav-bar-BG: $fadedGrey;
 
 // Welcome Banner 
 $wb-BG: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
@@ -74,11 +70,15 @@ $btn-font: $font-body-bold;
 $btn-BG: $darkBlue;
 $btn-border: 3px solid $white;
 $btn-color: $white;
-$btn-hover-BG: $white;
-$btn-hover-border: 3px solid $darkBlue;
-$btn-hover-color: $darkBlue;
+$btn-invert-BG: $white;
+$btn-invert-border: 3px solid $darkBlue;
+$btn-invert-color: $darkBlue;
 
 // Work panels
 $work-panel-BG: $darkBlue;
 $work-panel-color: $white;
 $work-panel-font: $font-body-bold;
+
+// Sections
+$section-BG-1: $darkBlue;
+$section-color-1: $white;

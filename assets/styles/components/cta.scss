@@ -16,8 +16,22 @@
 
     &:hover{
         cursor: pointer;
-        background-color: $btn-hover-BG;
-        border: $btn-hover-border;
-        color: $btn-hover-color;
+        background-color: $btn-invert-BG;
+        border: $btn-invert-border;
+        color: $btn-invert-color;
+    }
+
+    &-invert {
+        @extend .cta;
+        
+        background-color: $btn-invert-BG;
+        border: $btn-invert-border;
+        color: $btn-invert-color;
+
+        &:hover {
+            background-color: $btn-BG;
+            border: $btn-border;
+            color: $btn-color;
+        }
     }
 }

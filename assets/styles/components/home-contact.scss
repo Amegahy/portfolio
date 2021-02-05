@@ -1,0 +1,15 @@
+/* DOCUMENT INFORMATION
+    - Document: All home contact styling
+    - Author: Alex Megahy
+    - Description: All stylings for the contact section on the home page
+------------------------------------------- */
+
+/* Home contact container */
+.home-contact {
+    background-color: $section-BG-1;
+
+    h3 {
+        color: $section-color-1;
+        margin: auto;
+    }
+}
