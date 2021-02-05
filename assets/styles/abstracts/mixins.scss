@@ -41,11 +41,11 @@
 }
 
 /* Full BG Image */
-@mixin bg-image($url){
+@mixin bg-image($url, $size){
     background-image: url($img-dir + $url);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: $size;
 }
 
 /* Full height and width */

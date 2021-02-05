@@ -19,22 +19,22 @@
         width: 50%;
 
         &.uni {
-            @include bg-image("aboutMePanels/newcastle-university-logo.png");
+            @include bg-image("aboutMePanels/newcastle-university-logo.png", cover);
         }
         &.qrious {
-            @include bg-image("aboutMePanels/qrious-logo.png");
+            @include bg-image("aboutMePanels/qrious-logo.png", cover);
         }
         &.dev {
-            @include bg-image("aboutMePanels/web-dev.png");
+            @include bg-image("aboutMePanels/web-dev.png", cover);
         }
         &.clients {
-            @include bg-image("aboutMePanels/clients.png");
+            @include bg-image("aboutMePanels/clients.png", cover);
         }
         &.p-dev {
-            @include bg-image("aboutMePanels/personal-dev.png");
+            @include bg-image("aboutMePanels/personal-dev.png", cover);
         }
         &.eager {
-            @include bg-image("aboutMePanels/eager.png");
+            @include bg-image("aboutMePanels/eager.png", cover);
         }
     }
 
@@ -52,22 +52,22 @@
         }
 
         &.starry {
-            @include bg-image("workPanels/starry-night.png");
+            @include bg-image("workPanels/starry-night.png", cover);
         }
         &.accordion {
-            @include bg-image("workPanels/accordion.png");
+            @include bg-image("workPanels/accordion.png", cover);
         }
         &.paralax {
-            @include bg-image("workPanels/paralax.png");
+            @include bg-image("workPanels/paralax.png", cover);
         }
         &.slideshow {
-            @include bg-image("workPanels/slideshow.png");
+            @include bg-image("workPanels/slideshow.png", cover);
         }
         &.login {
-            @include bg-image("workPanels/login.png");
+            @include bg-image("workPanels/login.png", cover);
         }
         &.ajax {
-            @include bg-image("workPanels/ajax.png");
+            @include bg-image("workPanels/ajax.png", cover);
         }
 
         // Hover for panels

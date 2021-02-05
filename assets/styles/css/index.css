@@ -217,25 +217,25 @@ section {
   background-image: url("/assets/img/navbar/github-logo.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .nav-bar .nav-bar-icons .nav-icon.codepen {
   background-image: url("/assets/img/navbar/codepen-logo.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .nav-bar .nav-bar-icons .nav-icon.linkedIn {
   background-image: url("/assets/img/navbar/linkedin-logo.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .nav-bar .nav-bar-icons .nav-icon.facebook {
   background-image: url("/assets/img/navbar/facebook-logo.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 @media only screen and (min-width: 576px) {
   .nav-bar .nav-bar-icons .nav-icon {
@@ -540,4 +540,59 @@ section {
   .about-me-container .click-on-me-cont .click-on-me-pic {
     width: 50%;
   }
+}
+/* DOCUMENT INFORMATION
+    - Document: All client section stylings
+    - Author: Alex Megahy
+    - Description: All client section stylings
+------------------------------------------- */
+/* Main clients container for home page */
+.clients-container .clients {
+  /* Nord */
+  /* Nissan */
+  /* Gosforth Group */
+  /* NECCR */
+  /* Qrious */
+  /* Bookfit */
+}
+.clients-container .clients > .col-12 {
+  height: 60px;
+  margin: 2em 0;
+  width: 100%;
+}
+.clients-container .clients .nae {
+  background-image: url("/assets/img/clients/nae-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.clients-container .clients .nissan {
+  background-image: url("/assets/img/clients/nissan-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.clients-container .clients .gg {
+  background-image: url("/assets/img/clients/gosforth-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.clients-container .clients .neccr {
+  background-image: url("/assets/img/clients/neccr-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.clients-container .clients .qrious {
+  background-image: url("/assets/img/clients/qrious-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.clients-container .clients .bookfit {
+  background-image: url("/assets/img/clients/bookfit-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

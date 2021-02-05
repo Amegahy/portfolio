@@ -217,25 +217,25 @@ section {
   background-image: url("/assets/img/navbar/github-logo.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .nav-bar .nav-bar-icons .nav-icon.codepen {
   background-image: url("/assets/img/navbar/codepen-logo.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .nav-bar .nav-bar-icons .nav-icon.linkedIn {
   background-image: url("/assets/img/navbar/linkedin-logo.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .nav-bar .nav-bar-icons .nav-icon.facebook {
   background-image: url("/assets/img/navbar/facebook-logo.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 @media only screen and (min-width: 576px) {
   .nav-bar .nav-bar-icons .nav-icon {

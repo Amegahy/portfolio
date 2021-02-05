@@ -18,7 +18,7 @@
                 text-align: center;
 
                 &::after{
-                    @include bg-image("icons/arrow.png");
+                    @include bg-image("icons/arrow.png", cover);
                     content: "";
     
                     display: block;
@@ -38,7 +38,7 @@
             width: 150px;
 
             &::after{
-                @include bg-image("aboutMePics/me-pic-1.jpg");
+                @include bg-image("aboutMePics/me-pic-1.jpg", cover);
                 content: "";
 
                 display: block;

@@ -17,7 +17,7 @@
     width: 40px;
     
     &::after{
-        @include bg-image("icons/hamburger-icon.png");
+        @include bg-image("icons/hamburger-icon.png", cover);
         
         content: "";
         cursor: pointer;
@@ -67,19 +67,19 @@
             width: 50px;
 
             &.github{
-                @include bg-image("navbar/github-logo.png");
+                @include bg-image("navbar/github-logo.png", contain);
             }
 
             &.codepen{
-                @include bg-image("navbar/codepen-logo.png");
+                @include bg-image("navbar/codepen-logo.png", contain);
             }
 
             &.linkedIn{
-                @include bg-image("navbar/linkedin-logo.jpg");
+                @include bg-image("navbar/linkedin-logo.jpg", contain);
             }
 
             &.facebook{
-                @include bg-image("navbar/facebook-logo.jpg");
+                @include bg-image("navbar/facebook-logo.jpg", contain);
             }
 
             @media only screen and (min-width: $sm-breakpoint) {
