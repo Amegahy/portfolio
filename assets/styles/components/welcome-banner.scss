@@ -6,7 +6,8 @@
 
 /* Main welcome banner */
 .welcome-banner {
-    background-image: $wb-BG;
+    @include bg-image("welcomeBanner/welcome-banner-bg.jpg", cover);
+
     display: flex;
     height: 100vh;
 
@@ -27,9 +28,10 @@
             white-space: nowrap; 
             width: 17em;
             
-            h1{
+            h1 {
                 color: $wb-heading-colour;
                 font-family: $wb-font-heading;
+                font-size: 2rem;
             }
         }   
     }

@@ -60,7 +60,6 @@ $nav-bar-color: $white;
 $closeBtn-color: $white;
 
 // Welcome Banner 
-$wb-BG: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
 $wb-text-BG: $white;
 $wb-heading-colour: $codingGreen;
 $wb-heading-border: .15em solid $codingGreen;
@@ -75,10 +74,9 @@ $btn-invert-border: 3px solid $darkBlue;
 $btn-invert-color: $darkBlue;
 
 // Work panels
-$work-panel-BG: $darkBlue;
-$work-panel-color: $white;
-$work-panel-font: $font-body-bold;
+$work-panel-border: 3px solid $darkBlue;
 
 // Sections
-$section-BG-1: $darkBlue;
-$section-color-1: $white;
+$section-BG: $darkBlue;
+$section-border: 5px solid $darkBlue;
+$section-color: $white;

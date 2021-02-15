@@ -9,17 +9,21 @@
     <body>
         <span class="hamburger-menu"></span>
         <div class="nav-bar">
-            <a class="close-btn">X</a>
-            <div class="nav-bar-icons">
-                <div class="nav-icon github"></div>
-                <div class="nav-icon codepen"></div>
-                <div class="nav-icon linkedIn"></div>
-                <div class="nav-icon facebook"></div>
+            <div class="row">
+                <a class="close-btn">X</a>
+                <div class="nav-bar-icons container">
+                    <div class="nav-icon github"></div>
+                    <div class="nav-icon codepen"></div>
+                    <div class="nav-icon linkedIn"></div>
+                    <div class="nav-icon facebook"></div>
+                </div>
             </div>
-            <div class="nav-bar-items">
-                <a class="nav-bar-item" href="#">Home</a>
-                <a class="nav-bar-item" href="#">About Me</a>
-                <a class="nav-bar-item" href="#">Contact</a>
+            <div class="row">
+                <div class="nav-bar-items container">
+                    <a class="nav-bar-item" href="#">Home</a>
+                    <a class="nav-bar-item" href="#">About Me</a>
+                    <a class="nav-bar-item" href="#">Contact</a>
+                </div>
             </div>
         </div>
         <div class="welcome-banner">
@@ -35,7 +39,7 @@
                 <div class="click-on-me-cont">
                         <div class="click-on-me-text">
                             <p>Suus satis. Quod etiam optime. Vos ite post eum, fistulae, nunquam vivum exire ab ea. Sed cum hoc ... excidit tibi in cibo aut in potu, aut: olefac Elegantioris non sit ... triginta sex horae post ... Poof. Vir aetatis operantes, dura sicut facit ... nemo mirabatur. Mike suspectas habere possunt, sed quod omnes illi eris. Obsecro, unum homicidam maniaco tempore. </p>
-                        <p class="click-on-me">Click on me</p>
+                        <p class="click-on-me">Want to find out me? Click on me</p>
                     </div>
                     <div class="click-on-me-pic"></div>
                 </div>
@@ -43,53 +47,80 @@
             <div class="my-work container section">
                 <h2>My work</h2>
                 <div class="row">
-                    <div class="topic-panel col-12 col-md-6 col-lg-4">
-                        <div class="work-panel-icon starry">
-                            <div class="work-panel-hover">
-                                <p>Campfire built using SCSS and JS to populate the night sky with stars.</p>
-                                <button class="col-12 cta-invert">View</button>
-                            </div>
+                    <div class="col-12 col-md-4 work-panel">
+                        <div class="wp-icon-css">
                         </div>
+                        <p>
+                            <span class="bold">Uno ius generis copia</span>
+                            Uno ictu cruentus ille utrimque - statuit American Mexicanus gubernationes contra CONEXUS, et amputavit auriculam eius generis copia
+                        </p>
+                        <a href="#" class="cta col-12">View project</a>
+                        <p class="bold">Uno ictu</p>
+                        <ul class= "wp-list">
+                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Uno ictu cruentus ille utrimque</li>
+                        </ul>
                     </div>
-                    <div class="topic-panel col-12 col-md-6 col-lg-4">
-                        <div class="work-panel-icon accordion">
-                            <div class="work-panel-hover">
-                                <p>Accordion panels built using jQuery to control opening and closing of each of the panels.</p>
-                                <button class="col-12 cta-invert">View</button>
-                            </div>
+                    <div class="col-12 col-md-4 work-panel">
+                        <div class="wp-icon-scss">
                         </div>
+                        <p>
+                            <span class="bold">Uno ius generis copia</span>
+                            Uno ictu cruentus ille utrimque - statuit American Mexicanus gubernationes contra CONEXUS, et amputavit auriculam eius generis copia
+                        </p>
+                        <a href="#" class="cta col-12">View project</a>
+                        <p class="bold">Uno ictu</p>
+                        <ul class= "wp-list">
+                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Uno ictu cruentus ille utrimque</li>
+                        </ul>
                     </div>
-                    <div class="topic-panel col-12 col-md-6 col-lg-4">
-                        <div class="work-panel-icon paralax">
-                            <div class="work-panel-hover">
-                                <p>Paralax effects built using Less for multiple banner types, full screen, left and right.</p>
-                                <button class="col-12 cta-invert">View</button>
-                            </div>
+                    <div class="col-12 col-md-4 work-panel">
+                        <div class="wp-icon-js">
                         </div>
+                        <p>
+                            <span class="bold">Uno ius generis copia</span>
+                            Uno ictu cruentus ille utrimque - statuit American Mexicanus gubernationes contra CONEXUS, et amputavit auriculam eius generis copia
+                        </p>
+                        <a href="#" class="cta col-12">View project</a>
+                        <p class="bold">Uno ictu</p>
+                        <ul class= "wp-list">
+                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Uno ictu cruentus ille utrimque</li>
+                        </ul>
                     </div>
-                    <div class="topic-panel col-12 col-md-6 col-lg-4">
-                        <div class="work-panel-icon slideshow">
-                            <div class="work-panel-hover">
-                                <p>Slideshow built using JS and CSS, with controls for moving through the slideshow manually and automatically.</p>
-                                <button class="col-12 cta-invert">View</button>
-                            </div>
+                    <div class="col-12 col-md-4 offset-md-2 work-panel">
+                        <div class="wp-icon-ajax">
                         </div>
+                        <p>
+                            <span class="bold">Uno ius generis copia</span>
+                            Uno ictu cruentus ille utrimque - statuit American Mexicanus gubernationes contra CONEXUS, et amputavit auriculam eius generis copia
+                        </p>
+                        <a href="#" class="cta col-12">View project</a>
+                        <p class="bold">Uno ictu</p>
+                        <ul class= "wp-list">
+                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Uno ictu cruentus ille utrimque</li>
+                        </ul>
                     </div>
-                    <div class="topic-panel col-12 col-md-6 col-lg-4">
-                        <div class="work-panel-icon login">
-                            <div class="work-panel-hover">
-                                <p>Registration and login form built using PHP, page adapts is user is logged in.</p>
-                                <button class="col-12 cta-invert">View</button>
-                            </div>
+                    <div class="col-12 col-md-4 work-panel">
+                        <div class="wp-icon-php">
                         </div>
-                    </div>
-                    <div class="topic-panel col-12 col-md-6 col-lg-4">
-                        <div class="work-panel-icon ajax">
-                            <div class="work-panel-hover">
-                                <p>AJAX chat system, allows users to create chats with one or multiple users, assign nicknames and personal colours.</p>
-                                <button class="col-12 cta-invert">View</button>
-                            </div>
-                        </div>
+                        <p>
+                            <span class="bold">Uno ius generis copia</span>
+                            Uno ictu cruentus ille utrimque - statuit American Mexicanus gubernationes contra CONEXUS, et amputavit auriculam eius generis copia
+                        </p>
+                        <a href="#" class="cta col-12">View project</a>
+                        <p class="bold">Uno ictu</p>
+                        <ul class= "wp-list">
+                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Uno ictu cruentus ille utrimque</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -110,12 +141,12 @@
                     </div>
                 </div>
             </div>
-            <div class="section-fw">
-                <div class="home-contact container">
-                    <div class="row">
-                        <h3 class="col-6">Get in touch</h3>
-                        <button class="cta-invert col-6">Contact</button>
-                    </div>
+        </div>
+        <div class="section-fw">
+            <div class="home-contact container">
+                <div class="row">
+                    <h3 class="col-6">Get in touch</h3>
+                    <button class="cta-invert col-6">Contact</button>
                 </div>
             </div>
         </div>

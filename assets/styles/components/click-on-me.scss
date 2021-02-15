@@ -16,17 +16,6 @@
             .click-on-me {
                 font-family: $font-body-bold;
                 text-align: center;
-
-                &::after{
-                    @include bg-image("icons/arrow.png", cover);
-                    content: "";
-    
-                    display: block;
-                    height: 20px;
-                    margin: 0 auto;
-                    transform: rotate(90deg);
-                    width: 20px;
-                }
             } 
         }
 
@@ -63,14 +52,6 @@
                 /* "Click on me" */
                 .click-on-me {
                     text-align: left;
-
-                    &::after{
-                        display: inline-block;
-                        margin: auto 10px;
-                        position: absolute;
-                        right: 50%;
-                        transform: rotate(0);
-                    }
                 } 
             }
 

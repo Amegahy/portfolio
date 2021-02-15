@@ -10,9 +10,12 @@
     border: $btn-border;
     border-radius: 50px;
     color: $btn-color;
+    display: block;
     font-family: $btn-font;
     margin: 1em auto;
     padding: 10px;
+    text-align: center;
+    width: 100%;
 
     &:hover{
         cursor: pointer;
