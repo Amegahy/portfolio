@@ -1,0 +1,64 @@
+/* DOCUMENT INFORMATION
+    - Document: All "click on me" stylings
+    - Author: Alex Megahy
+    - Description: All "click on me" stylings for the "About Me" section of home page
+------------------------------------------- */
+
+/* Main "About Me" container for home page */
+.about-me {
+
+    .click-on-me-cont {
+
+        /* Main text container */
+        .click-on-me-text {
+
+            /* "Click on me" */
+            .click-on-me {
+                font-family: $font-body-bold;
+                text-align: center;
+            } 
+        }
+
+        /* Clickable picture */
+        .click-on-me-pic {
+            cursor: pointer;
+            margin: 0 auto;
+            height: 150px;
+            width: 150px;
+
+            &::after{
+                @include bg-image("aboutMePics/me-pic-1.jpg", cover);
+                content: "";
+
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: $sm-breakpoint) {
+.about-me {
+        .click-on-me-cont {
+            display: inline-flex;
+
+            /* Main text container */
+            .click-on-me-text {
+                width: 50%;
+
+                /* "Click on me" */
+                .click-on-me {
+                    text-align: left;
+                } 
+            }
+
+            /* Clickable picture */
+            .click-on-me-pic {
+                width: 50%;
+            }
+        }
+    }
+}

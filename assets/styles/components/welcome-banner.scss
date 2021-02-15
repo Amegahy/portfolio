@@ -6,10 +6,10 @@
 
 /* Main welcome banner */
 .welcome-banner {
-    background-image: $wb-BG;
+    @include bg-image("welcomeBanner/welcome-banner-bg.jpg", cover);
+
     display: flex;
     height: 100vh;
-    padding: 5em;
 
     /* Welcome banner content container */
     .wb-container{
@@ -28,17 +28,10 @@
             white-space: nowrap; 
             width: 17em;
             
-            &:nth-of-type(2){
-                @include keyframes(typing-wb2 3.5s 5s steps(30, end),blink-caret .5s step-end infinite);
-                
-                border-right: $wb-heading-border; 
-                width: 25.5em;
-            }
-            
-            h1,
-            h2{
+            h1 {
                 color: $wb-heading-colour;
                 font-family: $wb-font-heading;
+                font-size: 2rem;
             }
         }   
     }

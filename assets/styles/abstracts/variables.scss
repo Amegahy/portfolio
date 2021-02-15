@@ -29,9 +29,11 @@
 $black: #000000;
 $white: #ffffff;
 $lightGrey: #ededed;
+$fadedGrey: #e2e2e2ab;
 $codingGreen: #00D118;
-$fadedBlue: #49609c;
-$darkBlue: #1e3775;
+$darkBlue: #000b61;
+$darkBlueFaded: #000b61e3;
+$errorRed: #b50000;
 
 // Baseline
 $body-BG: $white;
@@ -53,17 +55,29 @@ $font-body-bold: 'Roboto Bold';
 $font-body: 'Roboto Regular';
 $font-colour: $black;
 
+// Navigation Bar
+$nav-bar-BG: $darkBlueFaded;
+$nav-bar-color: $white;
+$closeBtn-color: $white;
+
 // Welcome Banner 
-$wb-BG: url("/assets/img/welcomeBanner/welcome-banner-bg.jpg");
 $wb-text-BG: $white;
 $wb-heading-colour: $codingGreen;
 $wb-heading-border: .15em solid $codingGreen;
 
 // Buttons
-$btn-height: 2.9em;
 $btn-font: $font-body-bold;
-$btn-BG: $lightGrey;
-$btn-border: 3px solid $darkBlue;
-$btn-color: $black;
-$btn-hover-BG: $white;
+$btn-BG: $darkBlue;
+$btn-border: 3px solid $white;
+$btn-color: $white;
+$btn-invert-BG: $white;
+$btn-invert-border: 3px solid $darkBlue;
+$btn-invert-color: $darkBlue;
 
+// Work panels
+$work-panel-border: 3px solid $darkBlue;
+
+// Sections
+$section-BG: $darkBlue;
+$section-border: 5px solid $darkBlue;
+$section-color: $white;

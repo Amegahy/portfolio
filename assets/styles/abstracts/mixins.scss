@@ -18,12 +18,6 @@
     }
 }
 
-/* Typewriter animation (Second heading)*/
-@keyframes typing-wb2 {
-    from { width: 0 }
-    to { width: 25.5em }
-}
-
 /* Blink caret for typewriter animation */
 @keyframes blink-caret {
     from, to { border-color: transparent }
@@ -47,11 +41,11 @@
 }
 
 /* Full BG Image */
-@mixin bg-image($url){
+@mixin bg-image($url, $size){
     background-image: url($img-dir + $url);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: $size;
 }
 
 /* Full height and width */
