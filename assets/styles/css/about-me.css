@@ -144,6 +144,11 @@ button {
   margin: 1rem 0;
 }
 
+a,
+button {
+  outline: none;
+}
+
 /* DOCUMENT INFORMATION
     - Document: All structure styling
     - Author: Alex Megahy
@@ -179,6 +184,12 @@ button {
   font-weight: 600;
 }
 
+/* Stop scrolling */
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* DOCUMENT INFORMATION
     - Document: All nav bar styling
     - Author: Alex Megahy
@@ -186,7 +197,7 @@ button {
 ------------------------------------------- */
 /* Nav bar hamburger menu icon */
 .hamburger-menu {
-  background-color: #000b61;
+  background-color: #000b61e3;
   cursor: pointer;
   border-radius: 50px;
   display: block;
@@ -215,7 +226,7 @@ button {
 
 /* Nav bar container */
 .nav-bar {
-  background-color: #000b61;
+  background-color: #000b61e3;
   height: 100%;
   padding: 2em;
   position: fixed;

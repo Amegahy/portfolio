@@ -37,3 +37,9 @@
 .bold {
     font-weight: 600;
 }
+
+/* Stop scrolling */
+.stop-scroll {
+    height: 100%;
+    overflow: hidden;
+}
