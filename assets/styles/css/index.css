@@ -98,18 +98,20 @@
     - Description: All stylings for base elements
 ------------------------------------------- */
 body {
-  background-color: #ffffff;
+  background-color: #ededed;
 }
 
 h1,
 h2,
 h3,
 p,
+li,
 a {
   color: #000000;
 }
 
-p {
+p,
+li {
   font-family: "Roboto Regular";
 }
 
@@ -139,6 +141,7 @@ h3 {
 
 a,
 p,
+li,
 button {
   font-size: 1rem;
   margin: 1rem 0;
@@ -147,6 +150,10 @@ button {
 a,
 button {
   outline: none;
+}
+
+ul {
+  padding: 0;
 }
 
 /* DOCUMENT INFORMATION
@@ -161,11 +168,13 @@ button {
 
 /* Sections */
 .section, .section-fw {
+  background-color: #ffffff;
+  border-bottom: 5px solid #000b61;
   border-top: 5px solid #000b61;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-radius: 25px;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  padding: 1rem;
 }
 .section-fw {
   background-color: #000b61;
@@ -174,9 +183,6 @@ button {
   max-width: 100vw;
   position: absolute;
   width: 100%;
-}
-.section:first-of-type, .section-fw:first-of-type {
-  border-top: 0;
 }
 
 /* Bold text class */
@@ -365,110 +371,33 @@ button {
 }
 
 /* DOCUMENT INFORMATION
-    - Document: All topic panel styling
-    - Author: Alex Megahy
-    - Description: All stylings for the topic panels with icon and description
-------------------------------------------- */
-/* Topic panel container */
-.topic-panel {
-  display: inline-block;
-  font-family: "Roboto Regular";
-  height: 100%;
-  padding: 1em;
-}
-.topic-panel .about-panel-icon {
-  height: 100px;
-  margin: 1em auto;
-  padding: 1em;
-  width: 50%;
-}
-.topic-panel .about-panel-icon.uni {
-  background-image: url("/assets/img/aboutMePanels/newcastle-university-logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.qrious {
-  background-image: url("/assets/img/aboutMePanels/qrious-logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.dev {
-  background-image: url("/assets/img/aboutMePanels/web-dev.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.clients {
-  background-image: url("/assets/img/aboutMePanels/clients.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.p-dev {
-  background-image: url("/assets/img/aboutMePanels/personal-dev.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.eager {
-  background-image: url("/assets/img/aboutMePanels/eager.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* DOCUMENT INFORMATION
     - Document: All "click on me" stylings
     - Author: Alex Megahy
     - Description: All "click on me" stylings for the "About Me" section of home page
 ------------------------------------------- */
 /* Main "About Me" container for home page */
-.about-me .click-on-me-cont {
-  /* Main text container */
+.about-me {
   /* Clickable picture */
 }
-.about-me .click-on-me-cont .click-on-me-text {
-  /* "Click on me" */
-}
-.about-me .click-on-me-cont .click-on-me-text .click-on-me {
-  font-family: "Roboto Bold";
-  text-align: center;
-}
-.about-me .click-on-me-cont .click-on-me-pic {
-  cursor: pointer;
-  margin: 0 auto;
-  height: 150px;
-  width: 150px;
-}
-.about-me .click-on-me-cont .click-on-me-pic::after {
+.about-me .click-on-me-pic::after {
   background-image: url("/assets/img/aboutMePics/me-pic-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
   display: block;
-  height: 100%;
+  height: 250px;
+  margin: 0 auto;
   width: 100%;
 }
 
 /* Media Queries */
 @media only screen and (min-width: 576px) {
-  .about-me .click-on-me-cont {
-    display: inline-flex;
-    /* Main text container */
+  .about-me {
     /* Clickable picture */
   }
-  .about-me .click-on-me-cont .click-on-me-text {
-    width: 50%;
-    /* "Click on me" */
-  }
-  .about-me .click-on-me-cont .click-on-me-text .click-on-me {
-    text-align: left;
-  }
-  .about-me .click-on-me-cont .click-on-me-pic {
-    width: 50%;
+  .about-me .click-on-me-pic::after {
+    width: 300px;
   }
 }
 /* DOCUMENT INFORMATION
@@ -578,6 +507,18 @@ button {
 }
 .work-panel .wp-list {
   margin: 0;
+  list-style: none;
+}
+.work-panel .wp-list li::before {
+  background-image: url("/assets/img/workPanels/learn-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  margin-right: 10px;
+  width: 1rem;
 }
 
 /* Media Queries */

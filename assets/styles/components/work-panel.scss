@@ -49,6 +49,17 @@
     // Work panel list
     .wp-list {
         margin: 0;
+        list-style: none;
+
+        li::before {
+            @include bg-image("workPanels/learn-icon.svg", contain);
+            content: '';
+
+            display: inline-block;
+            height: 1rem;
+            margin-right: 10px;
+            width: 1rem;
+        }
     }
 }
 
