@@ -166,6 +166,11 @@ ul {
   visibility: hidden;
 }
 
+/* Center Text */
+.center-text {
+  text-align: center;
+}
+
 /* Sections */
 .section, .section-fw {
   background-color: #ffffff;
@@ -184,6 +189,10 @@ ul {
   position: absolute;
   width: 100%;
 }
+.section-fw h2,
+.section-fw p {
+  color: #ffffff;
+}
 
 /* Bold text class */
 .bold {
@@ -194,6 +203,14 @@ ul {
 .stop-scroll {
   height: 100%;
   overflow: hidden;
+}
+
+/* Center vertically and horizontally */
+.middle-of-screen {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
 }
 
 /* DOCUMENT INFORMATION
