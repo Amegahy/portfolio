@@ -13,11 +13,13 @@ h1,
 h2,
 h3,
 p,
+li,
 a {
     color: $font-colour;
 }
 
-p {
+p,
+li {
     font-family: $font-body;
 }
 
@@ -47,6 +49,7 @@ h3 {
 
 a,
 p,
+li,
 button {
     font-size: 1rem;
     margin: 1rem 0;
@@ -55,4 +58,8 @@ button {
 a,
 button {
     outline: none;
+}
+
+ul {
+    padding: 0;
 }

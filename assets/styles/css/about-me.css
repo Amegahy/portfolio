@@ -105,11 +105,13 @@ h1,
 h2,
 h3,
 p,
+li,
 a {
   color: #000000;
 }
 
-p {
+p,
+li {
   font-family: "Roboto Regular";
 }
 
@@ -139,6 +141,7 @@ h3 {
 
 a,
 p,
+li,
 button {
   font-size: 1rem;
   margin: 1rem 0;
@@ -147,6 +150,10 @@ button {
 a,
 button {
   outline: none;
+}
+
+ul {
+  padding: 0;
 }
 
 /* DOCUMENT INFORMATION
@@ -330,55 +337,113 @@ button {
 }
 
 /* DOCUMENT INFORMATION
-    - Document: All topic panel styling
+    - Document: All cover image to styling
     - Author: Alex Megahy
-    - Description: All stylings for the topic panels with icon and description
+    - Description: All stylings for the cover images
 ------------------------------------------- */
-/* Topic panel container */
-.topic-panel {
+/* Cover image container */
+.cover-image {
+  background-image: url("/assets/img/aboutMePics/cover-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  position: relative;
+  width: 100%;
+}
+.cover-image::after {
+  background-image: url("/assets/img/aboutMePics/profile-pic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  bottom: -10%;
+  display: block;
+  height: 150px;
+  border-radius: 100px;
+  width: 150px;
+  margin-bottom: -40px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 576px) {
+  /* Cover image container */
+  .cover-image {
+    height: 450px;
+  }
+  .cover-image::after {
+    height: 200px;
+    width: 200px;
+  }
+}
+/* DOCUMENT INFORMATION
+    - Document: All cover image to styling
+    - Author: Alex Megahy
+    - Description: All stylings for the cover images
+------------------------------------------- */
+/* Bio container */
+.bio-list, .bio-list-skills, .bio-list-home, .bio-list-work, .bio-list-school {
+  list-style: none;
+}
+.bio-list::before, .bio-list-skills::before, .bio-list-home::before, .bio-list-work::before, .bio-list-school::before {
+  content: "";
   display: inline-block;
-  font-family: "Roboto Regular";
-  height: 100%;
-  padding: 1em;
+  height: 1rem;
+  margin-right: 10px;
+  width: 1rem;
 }
-.topic-panel .about-panel-icon {
-  height: 100px;
-  margin: 1em auto;
-  padding: 1em;
-  width: 50%;
+.bio-list-school::before {
+  background-image: url("/assets/img/bioIcons/school-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.topic-panel .about-panel-icon.uni {
-  background-image: url("/assets/img/aboutMePanels/newcastle-university-logo.png");
+.bio-list-work::before {
+  background-image: url("/assets/img/bioIcons/work-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bio-list-home::before {
+  background-image: url("/assets/img/bioIcons/home-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bio-list-skills::before {
+  background-image: url("/assets/img/bioIcons/skills-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: All hobbies collage to styling
+    - Author: Alex Megahy
+    - Description: All stylings for the hobbies collage images
+------------------------------------------- */
+/* Collage images */
+.hobbies-image {
+  height: 300px;
+  width: 100%;
+}
+.hobbies-image:nth-of-type(1) {
+  background-image: url("/assets/img/hobbies/profile-pic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.topic-panel .about-panel-icon.qrious {
-  background-image: url("/assets/img/aboutMePanels/qrious-logo.png");
+.hobbies-image:nth-of-type(2) {
+  background-image: url("/assets/img/hobbies/profile-pic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.topic-panel .about-panel-icon.dev {
-  background-image: url("/assets/img/aboutMePanels/web-dev.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.clients {
-  background-image: url("/assets/img/aboutMePanels/clients.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.p-dev {
-  background-image: url("/assets/img/aboutMePanels/personal-dev.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.eager {
-  background-image: url("/assets/img/aboutMePanels/eager.png");
+.hobbies-image:nth-of-type(3) {
+  background-image: url("/assets/img/hobbies/profile-pic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

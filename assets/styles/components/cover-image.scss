@@ -1,0 +1,45 @@
+/* DOCUMENT INFORMATION
+    - Document: All cover image to styling
+    - Author: Alex Megahy
+    - Description: All stylings for the cover images
+------------------------------------------- */
+
+/* Cover image container */
+.cover-image {
+    @include bg-image("aboutMePics/cover-image.jpg", cover);
+
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    position: relative;
+    width: 100%;
+
+    
+    &::after {
+        @include bg-image("aboutMePics/profile-pic.jpg", cover);
+        content: "";
+
+        bottom: -10%;
+        display: block;
+        height: 150px;
+        border-radius: 100px;
+        width: 150px;
+        margin-bottom: -40px;
+    }
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: $sm-breakpoint) {
+    
+    /* Cover image container */
+    .cover-image {
+        height: 450px;
+        
+        &::after {
+            height: 200px;
+            width: 200px;
+        }
+    }
+}

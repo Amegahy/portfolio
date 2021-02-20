@@ -1,0 +1,51 @@
+/* DOCUMENT INFORMATION
+    - Document: All cover image to styling
+    - Author: Alex Megahy
+    - Description: All stylings for the cover images
+------------------------------------------- */
+
+/* Bio container */
+.bio-list {
+    list-style: none;
+
+    &::before {
+        content: '';
+
+        display: inline-block;
+        height: 1rem;
+        margin-right: 10px;
+        width: 1rem;
+    }
+
+    &-school{
+        @extend .bio-list;
+
+        &::before {
+            @include bg-image("bioIcons/school-icon.svg", contain);
+        }
+    }
+
+    &-work{
+        @extend .bio-list;
+
+        &::before {
+            @include bg-image("bioIcons/work-icon.svg", contain);
+        }
+    }
+
+    &-home{
+        @extend .bio-list;
+
+        &::before {
+            @include bg-image("bioIcons/home-icon.svg", contain);
+        }
+    }
+
+    &-skills{
+        @extend .bio-list;
+
+        &::before {
+            @include bg-image("bioIcons/skills-icon.svg", contain);
+        }
+    }
+}
