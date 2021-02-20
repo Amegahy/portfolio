@@ -9,6 +9,11 @@
     visibility: hidden;
 }
 
+/* Center Text */
+.center-text {
+    text-align: center;
+}
+
 /* Sections */
 .section {
     background-color: $section-main-BG;
@@ -28,6 +33,11 @@
         max-width: 100vw;
         position: absolute;
         width: 100%;
+
+        h2,
+        p {
+            color: $section-color;
+        }
     }
 }
 
@@ -40,4 +50,12 @@
 .stop-scroll {
     height: 100%;
     overflow: hidden;
+}
+
+/* Center vertically and horizontally */
+.middle-of-screen {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
 }
