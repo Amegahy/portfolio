@@ -166,6 +166,11 @@ ul {
   visibility: hidden;
 }
 
+/* Center Text */
+.center-text {
+  text-align: center;
+}
+
 /* Sections */
 .section, .section-fw {
   border-top: 5px solid #000b61;
@@ -182,6 +187,10 @@ ul {
   position: absolute;
   width: 100%;
 }
+.section-fw h2,
+.section-fw p {
+  color: #ffffff;
+}
 .section:first-of-type, .section-fw:first-of-type {
   border-top: 0;
 }
@@ -195,6 +204,14 @@ ul {
 .stop-scroll {
   height: 100%;
   overflow: hidden;
+}
+
+/* Center vertically and horizontally */
+.middle-of-screen {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
 }
 
 /* DOCUMENT INFORMATION
