@@ -34,12 +34,21 @@
 
 /* Nav bar container */
 .nav-bar {
+    @extend .middle-of-screen;
+
     background-color: $nav-bar-BG;
     height: 100%;
     padding: 2em;
     position: fixed;
     width: 100%;
     z-index: 1;
+
+    /* All icons and buttons */
+    .nav-bar-item,
+    .nav-bar-icon,
+    .close-btn {
+        cursor: pointer;
+    }
 
     /* Nav bar items container */
     .nav-bar-items {
@@ -55,46 +64,53 @@
         }
     }
 
-    /* Nav bar icons container */
-    .nav-bar-icons {
-        display: inline-flex;
-        width: 100%;
-        margin: 0 auto;
-
-        /* Nav bar logo icons */
-        .nav-icon {
-            cursor: pointer;
-            height: 50px;
-            margin: 25px auto;
-            padding: 0;
-            width: 50px;
-
-            &.github{
-                @include bg-image("navbar/github-logo.png", contain);
-            }
-
-            &.codepen{
-                @include bg-image("navbar/codepen-logo.png", contain);
-            }
-
-            &.linkedIn{
-                @include bg-image("navbar/linkedin-logo.png", contain);
-            }
-
-            &.facebook{
-                @include bg-image("navbar/facebook-logo.png", contain);
-            }
-        }
-    }
-
-    /* Close button */
-    .close-btn {
-        color: $closeBtn-color;
-        cursor: pointer;
-        font-size: 1.5em;
-        left: 0;
-        margin: 0 .5em;
+    /* Top bar of navigation */
+    .nav-bar-top {
         position: absolute;
         top: 0;
+        width: 100%;
+
+        /* Nav bar icons container */
+        .nav-bar-icons {
+            display: inline-flex;
+            margin: 0 auto;
+            width: 100%;
+
+            /* Nav bar logo icons */
+            .nav-icon {
+                cursor: pointer;
+                height: 50px;
+                margin: 25px auto;
+                padding: 0;
+                width: 50px;
+
+                &.github{
+                    @include bg-image("navbar/github-logo.png", contain);
+                }
+
+                &.codepen{
+                    @include bg-image("navbar/codepen-logo.png", contain);
+                }
+
+                &.linkedIn{
+                    @include bg-image("navbar/linkedin-logo.png", contain);
+                }
+
+                &.facebook{
+                    @include bg-image("navbar/facebook-logo.png", contain);
+                }
+            }
+        }
+
+        /* Close button */
+        .close-btn {
+            color: $closeBtn-color;
+            cursor: pointer;
+            font-size: 1.5em;
+            left: 0;
+            margin: 0 .5em;
+            position: absolute;
+            top: 0;
+        }
     }
 }

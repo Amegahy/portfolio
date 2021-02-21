@@ -6,14 +6,14 @@
 
 @import 'variables.scss';
 
-/* Typewriter animation (First heading)*/
-@keyframes typing-wb1 {
+/* Typewriter animation*/
+@keyframes typing-wb {
     from { 
         width: 0;         
         border-right: $wb-heading-border; 
     }
     to { 
-        width: 17em;         
+        width: 32em;         
         border-right: $wb-heading-border; 
     }
 }
