@@ -47,8 +47,19 @@
   font-family: "Roboto Regular";
   src: url("../thirdparty/Roboto-Regular.ttf") format("truetype");
 }
-/* Typewriter animation*/
-@keyframes typing-wb {
+/* Typewriter animation for small screens */
+@keyframes typing-wb-small {
+  from {
+    width: 0;
+    border-right: 0.15em solid #00D118;
+  }
+  to {
+    width: 17em;
+    border-right: 0.15em solid #00D118;
+  }
+}
+/* Typewriter animation for large screens */
+@keyframes typing-wb-large {
   from {
     width: 0;
     border-right: 0.15em solid #00D118;

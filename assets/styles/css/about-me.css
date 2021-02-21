@@ -47,8 +47,19 @@
   font-family: "Roboto Regular";
   src: url("../thirdparty/Roboto-Regular.ttf") format("truetype");
 }
-/* Typewriter animation*/
-@keyframes typing-wb {
+/* Typewriter animation for small screens */
+@keyframes typing-wb-small {
+  from {
+    width: 0;
+    border-right: 0.15em solid #00D118;
+  }
+  to {
+    width: 17em;
+    border-right: 0.15em solid #00D118;
+  }
+}
+/* Typewriter animation for large screens */
+@keyframes typing-wb-large {
   from {
     width: 0;
     border-right: 0.15em solid #00D118;
@@ -464,19 +475,43 @@ ul {
   width: 100%;
 }
 .collage-container .hobbies-image:nth-of-type(1) {
-  background-image: url("/assets/img/hobbies/profile-pic.jpg");
+  background-image: url("/assets/img/hobbies/picture-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .collage-container .hobbies-image:nth-of-type(2) {
-  background-image: url("/assets/img/hobbies/profile-pic.jpg");
+  background-image: url("/assets/img/hobbies/picture-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .collage-container .hobbies-image:nth-of-type(3) {
-  background-image: url("/assets/img/hobbies/profile-pic.jpg");
+  background-image: url("/assets/img/hobbies/picture-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collage-container .hobbies-image:nth-of-type(4) {
+  background-image: url("/assets/img/hobbies/picture-4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collage-container .hobbies-image:nth-of-type(5) {
+  background-image: url("/assets/img/hobbies/picture-5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collage-container .hobbies-image:nth-of-type(6) {
+  background-image: url("/assets/img/hobbies/picture-6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collage-container .hobbies-image:nth-of-type(7) {
+  background-image: url("/assets/img/hobbies/picture-7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
