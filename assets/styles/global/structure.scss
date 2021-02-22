@@ -16,11 +16,13 @@
 
 /* Sections */
 .section {
+    background-color: $section-main-BG;
+    border-bottom: $section-border;
     border-top: $section-border;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
+    border-radius: 25px;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    padding: 1rem;
 
     &-fw {
         @extend .section;
@@ -36,10 +38,6 @@
         p {
             color: $section-color;
         }
-    }
-
-    &:first-of-type {
-        border-top: 0;
     }
 }
 

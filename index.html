@@ -9,13 +9,13 @@
     <body>
         <span class="hamburger-menu"></span>
         <div class="nav-bar">
-            <div class="row">
+            <div class="row nav-bar-top">
                 <a class="close-btn">X</a>
                 <div class="nav-bar-icons container">
-                    <div class="nav-icon github"></div>
-                    <div class="nav-icon codepen"></div>
-                    <div class="nav-icon linkedIn"></div>
-                    <div class="nav-icon facebook"></div>
+                    <a href="https://github.com/Amegahy?tab=repositories" class="nav-icon github"></a>
+                    <a href="https://codepen.io/your-work" class="nav-icon codepen"></a>
+                    <a href="https://www.linkedin.com/in/alexmegahy/" class="nav-icon linkedIn"></a>
+                    <a href="https://www.facebook.com/alex.megahy.5" class="nav-icon facebook"></a>
                 </div>
             </div>
             <div class="row">
@@ -36,90 +36,91 @@
         <div class="container">
             <div class="about-me container section">
                 <h2>A bit about me</h2>
-                <div class="click-on-me-cont">
-                        <div class="click-on-me-text">
-                            <p>Suus satis. Quod etiam optime. Vos ite post eum, fistulae, nunquam vivum exire ab ea. Sed cum hoc ... excidit tibi in cibo aut in potu, aut: olefac Elegantioris non sit ... triginta sex horae post ... Poof. Vir aetatis operantes, dura sicut facit ... nemo mirabatur. Mike suspectas habere possunt, sed quod omnes illi eris. Obsecro, unum homicidam maniaco tempore. </p>
-                        <a href="/about-me.html" class="click-on-me">Want to find out more about me?</a>
+                <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p>I am a Newcastle University graduate with a degree in Computer Science, for my dissertation I solely developed a prototype audit system for Nissan. Experienced in front-end web development and some experience in mobile development. Looking to take career to next level with new responsibilities, new challenges and built upon my existing skills.</p>
+                        <a href="/about-me.html" class="cta">Want to find out more about me?</a>
                     </div>
-                    <div class="click-on-me-pic"></div>
+                    <div class="col-12 col-md-8 click-on-me-pic"></div>
                 </div>
             </div>
             <div class="my-work container section">
                 <h2>My work</h2>
+                <p>Below are some examples of my personal projects, languages they were developed with and things I learned throughout the project. </p>
                 <div class="row">
                     <div class="col-12 col-md-4 work-panel">
                         <div class="wp-icon-css">
                         </div>
                         <p>
-                            <span class="bold">Uno ius generis copia</span>
-                            Uno ictu cruentus ille utrimque - statuit American Mexicanus gubernationes contra CONEXUS, et amputavit auriculam eius generis copia
+                            <span class="bold">Automatic slideshow.</span>
+                            CSS Slideshow using JS to automatically move the slides and allow users to cycle through the slides manually. 
                         </p>
-                        <a href="#" class="cta col-12">View project</a>
-                        <p class="bold">Uno ictu</p>
+                        <a href="https://codepen.io/amegahy/pen/OJLzdye" class="cta col-12">View project</a>
+                        <p class="bold">Things I learned with this project:</p>
                         <ul class= "wp-list">
-                            <li>Uno ictu cruentus ille utrimque</li>
-                            <li>Uno ictu cruentus ille utrimque</li>
-                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Keyframes animation</li>
+                            <li>Manipulate CSS with JS</li>
+                            <li>Use of external fonts and icons</li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-4 work-panel">
                         <div class="wp-icon-scss">
                         </div>
                         <p>
-                            <span class="bold">Uno ius generis copia</span>
-                            Uno ictu cruentus ille utrimque - statuit American Mexicanus gubernationes contra CONEXUS, et amputavit auriculam eius generis copia
+                            <span class="bold">Starry night camp fire.</span>
+                            An animating campfire built using structured SCSS mixins and jQuery to randomly populate the sky with stars.
                         </p>
-                        <a href="#" class="cta col-12">View project</a>
-                        <p class="bold">Uno ictu</p>
+                        <a href="https://codepen.io/amegahy/pen/LYRVPaz" class="cta col-12">View project</a>
+                        <p class="bold">Things I learned with this project:</p>
                         <ul class= "wp-list">
-                            <li>Uno ictu cruentus ille utrimque</li>
-                            <li>Uno ictu cruentus ille utrimque</li>
-                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Animations</li>
+                            <li>Use of mixins and variables</li>
+                            <li>Extend classes to better optimise code</li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-4 work-panel">
                         <div class="wp-icon-js">
                         </div>
                         <p>
-                            <span class="bold">Uno ius generis copia</span>
-                            Uno ictu cruentus ille utrimque - statuit American Mexicanus gubernationes contra CONEXUS, et amputavit auriculam eius generis copia
+                            <span class="bold">Accordion.</span>
+                            Basic accordions built using jQuery containing text panels. Accordions controlled by individual click or the “Collapse All” button.
                         </p>
-                        <a href="#" class="cta col-12">View project</a>
-                        <p class="bold">Uno ictu</p>
+                        <a href="https://codepen.io/amegahy/pen/VwZOXKB" class="cta col-12">View project</a>
+                        <p class="bold">Things I learned with this project:</p>
                         <ul class= "wp-list">
-                            <li>Uno ictu cruentus ille utrimque</li>
-                            <li>Uno ictu cruentus ille utrimque</li>
-                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Basic jQuery syntax</li>
+                            <li>Control of element’s states</li>
+                            <li>Manipulate CSS with JS</li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-4 offset-md-2 work-panel">
                         <div class="wp-icon-ajax">
                         </div>
                         <p>
-                            <span class="bold">Uno ius generis copia</span>
-                            Uno ictu cruentus ille utrimque - statuit American Mexicanus gubernationes contra CONEXUS, et amputavit auriculam eius generis copia
+                            <span class="bold">AJAX Chat.</span>
+                            A chat system built using vanilla JS to allow users to chat, allows for group chats, nicknames, and personal colours. 
                         </p>
-                        <a href="#" class="cta col-12">View project</a>
-                        <p class="bold">Uno ictu</p>
+                        <a href="https://github.com/Amegahy/JS-Chat" class="cta col-12">View project</a>
+                        <p class="bold">Things I learned with this project:</p>
                         <ul class= "wp-list">
-                            <li>Uno ictu cruentus ille utrimque</li>
-                            <li>Uno ictu cruentus ille utrimque</li>
-                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Integration between JS and PHP</li>
+                            <li>Sharing functions across multiple JS files</li>
+                            <li>Handling responses from backend in a user-friendly way</li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-4 work-panel">
                         <div class="wp-icon-php">
                         </div>
                         <p>
-                            <span class="bold">Uno ius generis copia</span>
-                            Uno ictu cruentus ille utrimque - statuit American Mexicanus gubernationes contra CONEXUS, et amputavit auriculam eius generis copia
+                            <span class="bold">PHP login.</span>
+                            A simple login system using php to validate and add users to a SQL database, showing different content based on the user’s log in status.
                         </p>
-                        <a href="#" class="cta col-12">View project</a>
-                        <p class="bold">Uno ictu</p>
+                        <a href="https://github.com/Amegahy/PHPLoginSystem" class="cta col-12">View project</a>
+                        <p class="bold">Things I learned with this project:</p>
                         <ul class= "wp-list">
-                            <li>Uno ictu cruentus ille utrimque</li>
-                            <li>Uno ictu cruentus ille utrimque</li>
-                            <li>Uno ictu cruentus ille utrimque</li>
+                            <li>Interaction between PHP and SQL databases</li>
+                            <li>Use of reusable php components, like the header and footer</li>
+                            <li>PHP validation methods</li>
                         </ul>
                     </div>
                 </div>
@@ -146,7 +147,7 @@
             <div class="home-contact container">
                 <div class="row">
                     <h3 class="col-6">Get in touch</h3>
-                    <a class="cta-invert col-6">Contact</a>
+                    <a href="contact.html" class="cta-invert col-6">Contact</a>
                 </div>
             </div>
         </div>

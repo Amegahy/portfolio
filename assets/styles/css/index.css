@@ -47,14 +47,25 @@
   font-family: "Roboto Regular";
   src: url("../thirdparty/Roboto-Regular.ttf") format("truetype");
 }
-/* Typewriter animation (First heading)*/
-@keyframes typing-wb1 {
+/* Typewriter animation for small screens */
+@keyframes typing-wb-small {
   from {
     width: 0;
     border-right: 0.15em solid #00D118;
   }
   to {
     width: 17em;
+    border-right: 0.15em solid #00D118;
+  }
+}
+/* Typewriter animation for large screens */
+@keyframes typing-wb-large {
+  from {
+    width: 0;
+    border-right: 0.15em solid #00D118;
+  }
+  to {
+    width: 32em;
     border-right: 0.15em solid #00D118;
   }
 }
@@ -105,11 +116,13 @@ h1,
 h2,
 h3,
 p,
+li,
 a {
   color: #000000;
 }
 
-p {
+p,
+li {
   font-family: "Roboto Regular";
 }
 
@@ -139,6 +152,7 @@ h3 {
 
 a,
 p,
+li,
 button {
   font-size: 1rem;
   margin: 1rem 0;
@@ -147,6 +161,10 @@ button {
 a,
 button {
   outline: none;
+}
+
+ul {
+  padding: 0;
 }
 
 /* DOCUMENT INFORMATION
@@ -159,13 +177,20 @@ button {
   visibility: hidden;
 }
 
+/* Center Text */
+.center-text {
+  text-align: center;
+}
+
 /* Sections */
 .section, .section-fw {
+  background-color: #ffffff;
+  border-bottom: 5px solid #000b61;
   border-top: 5px solid #000b61;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-radius: 25px;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  padding: 1rem;
 }
 .section-fw {
   background-color: #000b61;
@@ -175,8 +200,9 @@ button {
   position: absolute;
   width: 100%;
 }
-.section:first-of-type, .section-fw:first-of-type {
-  border-top: 0;
+.section-fw h2,
+.section-fw p {
+  color: #ffffff;
 }
 
 /* Bold text class */
@@ -190,6 +216,14 @@ button {
   overflow: hidden;
 }
 
+/* Center vertically and horizontally */
+.middle-of-screen, .nav-bar {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
 /* DOCUMENT INFORMATION
     - Document: All nav bar styling
     - Author: Alex Megahy
@@ -197,7 +231,7 @@ button {
 ------------------------------------------- */
 /* Nav bar hamburger menu icon */
 .hamburger-menu {
-  background-color: #000b61e3;
+  background-color: #000b61;
   cursor: pointer;
   border-radius: 50px;
   display: block;
@@ -226,15 +260,20 @@ button {
 
 /* Nav bar container */
 .nav-bar {
-  background-color: #000b61e3;
+  background-color: #000b61;
   height: 100%;
   padding: 2em;
   position: fixed;
   width: 100%;
   z-index: 1;
+  /* All icons and buttons */
   /* Nav bar items container */
-  /* Nav bar icons container */
-  /* Close button */
+  /* Top bar of navigation */
+}
+.nav-bar .nav-bar-item,
+.nav-bar .nav-bar-icon,
+.nav-bar .close-btn {
+  cursor: pointer;
 }
 .nav-bar .nav-bar-items {
   margin: 0 auto;
@@ -247,44 +286,51 @@ button {
   margin: 3vw 0;
   text-align: center;
 }
-.nav-bar .nav-bar-icons {
-  display: inline-flex;
+.nav-bar .nav-bar-top {
+  position: absolute;
+  top: 0;
   width: 100%;
+  /* Nav bar icons container */
+  /* Close button */
+}
+.nav-bar .nav-bar-top .nav-bar-icons {
+  display: inline-flex;
   margin: 0 auto;
+  width: 100%;
   /* Nav bar logo icons */
 }
-.nav-bar .nav-bar-icons .nav-icon {
+.nav-bar .nav-bar-top .nav-bar-icons .nav-icon {
   cursor: pointer;
   height: 50px;
   margin: 25px auto;
   padding: 0;
   width: 50px;
 }
-.nav-bar .nav-bar-icons .nav-icon.github {
+.nav-bar .nav-bar-top .nav-bar-icons .nav-icon.github {
   background-image: url("/assets/img/navbar/github-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.nav-bar .nav-bar-icons .nav-icon.codepen {
+.nav-bar .nav-bar-top .nav-bar-icons .nav-icon.codepen {
   background-image: url("/assets/img/navbar/codepen-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.nav-bar .nav-bar-icons .nav-icon.linkedIn {
+.nav-bar .nav-bar-top .nav-bar-icons .nav-icon.linkedIn {
   background-image: url("/assets/img/navbar/linkedin-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.nav-bar .nav-bar-icons .nav-icon.facebook {
+.nav-bar .nav-bar-top .nav-bar-icons .nav-icon.facebook {
   background-image: url("/assets/img/navbar/facebook-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.nav-bar .close-btn {
+.nav-bar .nav-bar-top .close-btn {
   color: #ffffff;
   cursor: pointer;
   font-size: 1.5em;
@@ -315,7 +361,7 @@ button {
   /* Welcome banner text container */
 }
 .welcome-banner .wb-container .wb-heading {
-  animation: typing-wb1 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  animation: typing-wb-small 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   letter-spacing: 0.15em;
   margin: 0 auto;
   overflow: hidden;
@@ -329,6 +375,17 @@ button {
   font-size: 2rem;
 }
 
+/* Media Queries */
+@media only screen and (min-width: 576px) {
+  /* Welcome banner text container */
+  .welcome-banner .wb-container .wb-heading {
+    animation: typing-wb-large 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+    width: 32em;
+  }
+  .welcome-banner .wb-container .wb-heading h1 {
+    font-size: 4rem;
+  }
+}
 /* DOCUMENT INFORMATION
     - Document: All cta to styling
     - Author: Alex Megahy
@@ -365,110 +422,33 @@ button {
 }
 
 /* DOCUMENT INFORMATION
-    - Document: All topic panel styling
-    - Author: Alex Megahy
-    - Description: All stylings for the topic panels with icon and description
-------------------------------------------- */
-/* Topic panel container */
-.topic-panel {
-  display: inline-block;
-  font-family: "Roboto Regular";
-  height: 100%;
-  padding: 1em;
-}
-.topic-panel .about-panel-icon {
-  height: 100px;
-  margin: 1em auto;
-  padding: 1em;
-  width: 50%;
-}
-.topic-panel .about-panel-icon.uni {
-  background-image: url("/assets/img/aboutMePanels/newcastle-university-logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.qrious {
-  background-image: url("/assets/img/aboutMePanels/qrious-logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.dev {
-  background-image: url("/assets/img/aboutMePanels/web-dev.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.clients {
-  background-image: url("/assets/img/aboutMePanels/clients.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.p-dev {
-  background-image: url("/assets/img/aboutMePanels/personal-dev.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topic-panel .about-panel-icon.eager {
-  background-image: url("/assets/img/aboutMePanels/eager.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* DOCUMENT INFORMATION
     - Document: All "click on me" stylings
     - Author: Alex Megahy
     - Description: All "click on me" stylings for the "About Me" section of home page
 ------------------------------------------- */
 /* Main "About Me" container for home page */
-.about-me .click-on-me-cont {
-  /* Main text container */
+.about-me {
   /* Clickable picture */
 }
-.about-me .click-on-me-cont .click-on-me-text {
-  /* "Click on me" */
-}
-.about-me .click-on-me-cont .click-on-me-text .click-on-me {
-  font-family: "Roboto Bold";
-  text-align: center;
-}
-.about-me .click-on-me-cont .click-on-me-pic {
-  cursor: pointer;
-  margin: 0 auto;
-  height: 150px;
-  width: 150px;
-}
-.about-me .click-on-me-cont .click-on-me-pic::after {
-  background-image: url("/assets/img/aboutMePics/me-pic-1.jpg");
+.about-me .click-on-me-pic::after {
+  background-image: url("/assets/img/aboutMePics/profile-pic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
   display: block;
-  height: 100%;
+  height: 250px;
+  margin: 0 auto;
   width: 100%;
 }
 
 /* Media Queries */
 @media only screen and (min-width: 576px) {
-  .about-me .click-on-me-cont {
-    display: inline-flex;
-    /* Main text container */
+  .about-me {
     /* Clickable picture */
   }
-  .about-me .click-on-me-cont .click-on-me-text {
-    width: 50%;
-    /* "Click on me" */
-  }
-  .about-me .click-on-me-cont .click-on-me-text .click-on-me {
-    text-align: left;
-  }
-  .about-me .click-on-me-cont .click-on-me-pic {
-    width: 50%;
+  .about-me .click-on-me-pic::after {
+    width: 300px;
   }
 }
 /* DOCUMENT INFORMATION
@@ -578,10 +558,22 @@ button {
 }
 .work-panel .wp-list {
   margin: 0;
+  list-style: none;
+}
+.work-panel .wp-list li::before {
+  background-image: url("/assets/img/workPanels/learn-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  margin-right: 10px;
+  width: 1rem;
 }
 
 /* Media Queries */
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   /* Work panel container */
   .work-panel {
     border: 0;

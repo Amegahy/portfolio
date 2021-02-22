@@ -47,14 +47,25 @@
   font-family: "Roboto Regular";
   src: url("../thirdparty/Roboto-Regular.ttf") format("truetype");
 }
-/* Typewriter animation (First heading)*/
-@keyframes typing-wb1 {
+/* Typewriter animation for small screens */
+@keyframes typing-wb-small {
   from {
     width: 0;
     border-right: 0.15em solid #00D118;
   }
   to {
     width: 17em;
+    border-right: 0.15em solid #00D118;
+  }
+}
+/* Typewriter animation for large screens */
+@keyframes typing-wb-large {
+  from {
+    width: 0;
+    border-right: 0.15em solid #00D118;
+  }
+  to {
+    width: 32em;
     border-right: 0.15em solid #00D118;
   }
 }
@@ -173,11 +184,13 @@ ul {
 
 /* Sections */
 .section, .section-fw {
+  background-color: #ffffff;
+  border-bottom: 5px solid #000b61;
   border-top: 5px solid #000b61;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-radius: 25px;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  padding: 1rem;
 }
 .section-fw {
   background-color: #000b61;
@@ -190,9 +203,6 @@ ul {
 .section-fw h2,
 .section-fw p {
   color: #ffffff;
-}
-.section:first-of-type, .section-fw:first-of-type {
-  border-top: 0;
 }
 
 /* Bold text class */
@@ -207,7 +217,7 @@ ul {
 }
 
 /* Center vertically and horizontally */
-.middle-of-screen {
+.middle-of-screen, .nav-bar {
   align-items: center;
   display: flex;
   height: 100vh;
@@ -221,7 +231,7 @@ ul {
 ------------------------------------------- */
 /* Nav bar hamburger menu icon */
 .hamburger-menu {
-  background-color: #000b61e3;
+  background-color: #000b61;
   cursor: pointer;
   border-radius: 50px;
   display: block;
@@ -250,15 +260,20 @@ ul {
 
 /* Nav bar container */
 .nav-bar {
-  background-color: #000b61e3;
+  background-color: #000b61;
   height: 100%;
   padding: 2em;
   position: fixed;
   width: 100%;
   z-index: 1;
+  /* All icons and buttons */
   /* Nav bar items container */
-  /* Nav bar icons container */
-  /* Close button */
+  /* Top bar of navigation */
+}
+.nav-bar .nav-bar-item,
+.nav-bar .nav-bar-icon,
+.nav-bar .close-btn {
+  cursor: pointer;
 }
 .nav-bar .nav-bar-items {
   margin: 0 auto;
@@ -271,44 +286,51 @@ ul {
   margin: 3vw 0;
   text-align: center;
 }
-.nav-bar .nav-bar-icons {
-  display: inline-flex;
+.nav-bar .nav-bar-top {
+  position: absolute;
+  top: 0;
   width: 100%;
+  /* Nav bar icons container */
+  /* Close button */
+}
+.nav-bar .nav-bar-top .nav-bar-icons {
+  display: inline-flex;
   margin: 0 auto;
+  width: 100%;
   /* Nav bar logo icons */
 }
-.nav-bar .nav-bar-icons .nav-icon {
+.nav-bar .nav-bar-top .nav-bar-icons .nav-icon {
   cursor: pointer;
   height: 50px;
   margin: 25px auto;
   padding: 0;
   width: 50px;
 }
-.nav-bar .nav-bar-icons .nav-icon.github {
+.nav-bar .nav-bar-top .nav-bar-icons .nav-icon.github {
   background-image: url("/assets/img/navbar/github-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.nav-bar .nav-bar-icons .nav-icon.codepen {
+.nav-bar .nav-bar-top .nav-bar-icons .nav-icon.codepen {
   background-image: url("/assets/img/navbar/codepen-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.nav-bar .nav-bar-icons .nav-icon.linkedIn {
+.nav-bar .nav-bar-top .nav-bar-icons .nav-icon.linkedIn {
   background-image: url("/assets/img/navbar/linkedin-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.nav-bar .nav-bar-icons .nav-icon.facebook {
+.nav-bar .nav-bar-top .nav-bar-icons .nav-icon.facebook {
   background-image: url("/assets/img/navbar/facebook-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.nav-bar .close-btn {
+.nav-bar .nav-bar-top .close-btn {
   color: #ffffff;
   cursor: pointer;
   font-size: 1.5em;

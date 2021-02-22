@@ -6,35 +6,15 @@
 
 /* Main "About Me" container for home page */
 .about-me {
+    /* Clickable picture */
+    .click-on-me-pic::after{
+        @include bg-image("aboutMePics/profile-pic.jpg", cover);
+        content: "";
 
-    .click-on-me-cont {
-
-        /* Main text container */
-        .click-on-me-text {
-
-            /* "Click on me" */
-            .click-on-me {
-                font-family: $font-body-bold;
-                text-align: center;
-            } 
-        }
-
-        /* Clickable picture */
-        .click-on-me-pic {
-            cursor: pointer;
-            margin: 0 auto;
-            height: 150px;
-            width: 150px;
-
-            &::after{
-                @include bg-image("aboutMePics/me-pic-1.jpg", cover);
-                content: "";
-
-                display: block;
-                height: 100%;
-                width: 100%;
-            }
-        }
+        display: block;
+        height: 250px;
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
@@ -42,23 +22,9 @@
 
 @media only screen and (min-width: $sm-breakpoint) {
 .about-me {
-        .click-on-me-cont {
-            display: inline-flex;
-
-            /* Main text container */
-            .click-on-me-text {
-                width: 50%;
-
-                /* "Click on me" */
-                .click-on-me {
-                    text-align: left;
-                } 
-            }
-
-            /* Clickable picture */
-            .click-on-me-pic {
-                width: 50%;
-            }
+    /* Clickable picture */
+    .click-on-me-pic::after{
+            width: 300px;
         }
     }
 }

@@ -12,14 +12,14 @@
     height: 100vh;
 
     /* Welcome banner content container */
-    .wb-container{
+    .wb-container {
         margin: auto;
         width: 100%;
 
         /* Welcome banner text container */
         .wb-heading{
             // Typerwriter effect
-            @include keyframes(typing-wb1 3.5s steps(30, end),blink-caret .5s step-end infinite);
+            @include keyframes(typing-wb-small 3.5s steps(30, end),blink-caret .5s step-end infinite);
             
             letter-spacing: .15em;
             margin: 0 auto;
@@ -35,4 +35,19 @@
             }
         }   
     }
+}
+
+
+
+/* Media Queries */
+@media only screen and (min-width: $sm-breakpoint) {
+        /* Welcome banner text container */
+        .welcome-banner .wb-container .wb-heading {
+            @include keyframes(typing-wb-large 3.5s steps(30, end),blink-caret .5s step-end infinite);
+            width: 32em;
+            
+            h1 {
+                font-size: 4rem;
+            }
+        }   
 }

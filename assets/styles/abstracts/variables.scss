@@ -32,7 +32,6 @@ $lightGrey: #ededed;
 $fadedGrey: #e2e2e2ab;
 $codingGreen: #00D118;
 $darkBlue: #000b61;
-$darkBlueFaded: #000b61e3;
 $errorRed: #b50000;
 
 // Baseline
@@ -56,7 +55,7 @@ $font-body: 'Roboto Regular';
 $font-colour: $black;
 
 // Navigation Bar
-$nav-bar-BG: $darkBlueFaded;
+$nav-bar-BG: $darkBlue;
 $nav-bar-color: $white;
 $closeBtn-color: $white;
 
@@ -78,6 +77,7 @@ $btn-invert-color: $darkBlue;
 $work-panel-border: 3px solid $darkBlue;
 
 // Sections
+$section-main-BG: $white;
 $section-BG: $darkBlue;
 $section-border: 5px solid $darkBlue;
 $section-color: $white;
