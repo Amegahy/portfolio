@@ -2,3 +2,7 @@
 - use variable fro border radius
 - go over and find common things to turn into mixins and classes
 - set all font sizes in the structure file
+- Change sections to have correct middle divider, straight line
+- Welcome banner: paralax effect, BG
+- Hamburger menu: Invert bg when over wb, fade in/grow in animation, change bg on hover
+- slidehsow for photos
