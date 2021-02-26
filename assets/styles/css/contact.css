@@ -243,7 +243,7 @@ ul {
   z-index: 1;
 }
 .hamburger-menu::after {
-  background-image: url("/assets/img/icons/hamburger-icon.png");
+  background-image: url("portfolio/assets/img/icons/hamburger-icon.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -307,25 +307,25 @@ ul {
   width: 50px;
 }
 .nav-bar .nav-bar-top .nav-bar-icons .nav-icon.github {
-  background-image: url("/assets/img/navbar/github-logo.png");
+  background-image: url("portfolio/assets/img/navbar/github-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .nav-bar .nav-bar-top .nav-bar-icons .nav-icon.codepen {
-  background-image: url("/assets/img/navbar/codepen-logo.png");
+  background-image: url("portfolio/assets/img/navbar/codepen-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .nav-bar .nav-bar-top .nav-bar-icons .nav-icon.linkedIn {
-  background-image: url("/assets/img/navbar/linkedin-logo.png");
+  background-image: url("portfolio/assets/img/navbar/linkedin-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .nav-bar .nav-bar-top .nav-bar-icons .nav-icon.facebook {
-  background-image: url("/assets/img/navbar/facebook-logo.png");
+  background-image: url("portfolio/assets/img/navbar/facebook-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
