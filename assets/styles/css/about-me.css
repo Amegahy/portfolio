@@ -468,50 +468,67 @@ ul {
 /* Collage container */
 .collage-container {
   padding: 0 15px;
-  /* Collage images */
 }
-.collage-container .hobbies-image {
+.collage-container .col-12 {
+  padding: 0;
+}
+
+/* Collage images */
+.hobbies-image, .hobbies-image-9, .hobbies-image-8, .hobbies-image-7, .hobbies-image-6, .hobbies-image-5, .hobbies-image-4, .hobbies-image-3, .hobbies-image-2, .hobbies-image-1 {
   height: 300px;
   width: 100%;
 }
-.collage-container .hobbies-image:nth-of-type(1) {
+.hobbies-image-1 {
   background-image: url("/assets/img/hobbies/picture-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.collage-container .hobbies-image:nth-of-type(2) {
+.hobbies-image-2 {
   background-image: url("/assets/img/hobbies/picture-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.collage-container .hobbies-image:nth-of-type(3) {
+.hobbies-image-3 {
   background-image: url("/assets/img/hobbies/picture-3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.collage-container .hobbies-image:nth-of-type(4) {
+.hobbies-image-4 {
   background-image: url("/assets/img/hobbies/picture-4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.collage-container .hobbies-image:nth-of-type(5) {
+.hobbies-image-5 {
   background-image: url("/assets/img/hobbies/picture-5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.collage-container .hobbies-image:nth-of-type(6) {
+.hobbies-image-6 {
   background-image: url("/assets/img/hobbies/picture-6.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 600px;
 }
-.collage-container .hobbies-image:nth-of-type(7) {
+.hobbies-image-7 {
   background-image: url("/assets/img/hobbies/picture-7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hobbies-image-8 {
+  background-image: url("/assets/img/hobbies/picture-8.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hobbies-image-9 {
+  background-image: url("/assets/img/hobbies/picture-9.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

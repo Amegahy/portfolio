@@ -1,0 +1,1 @@
+$.getScript('assets/js/components/nav-bar.js');

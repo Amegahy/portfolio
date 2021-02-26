@@ -7,39 +7,61 @@
 /* Collage container */
 .collage-container {
     padding: 0 15px;
+
+    .col-12 {
+        padding: 0;
+    } 
+}
+
+/* Collage images */
+.hobbies-image {
+    height: 300px;
+    width: 100%;
+
+    &-1{
+        @extend .hobbies-image;
+        @include bg-image("hobbies/picture-1.jpg", cover);
+    }
     
-    /* Collage images */
-    .hobbies-image {
-        height: 300px;
-        width: 100%;
-    
-        &:nth-of-type(1){
-            @include bg-image("hobbies/picture-1.jpg", cover);
-        }
-        
-        &:nth-of-type(2){
-            @include bg-image("hobbies/picture-2.jpg", cover);
-        }  
+    &-2{
+        @extend .hobbies-image;
+        @include bg-image("hobbies/picture-2.jpg", cover);
+    }  
 
-        &:nth-of-type(3){
-            @include bg-image("hobbies/picture-3.jpg", cover);
-        }  
+    &-3{
+        @extend .hobbies-image;
+        @include bg-image("hobbies/picture-3.jpg", cover);
+    }  
 
-        &:nth-of-type(4){
-            @include bg-image("hobbies/picture-4.jpg", cover);
-        }       
+    &-4{
+        @extend .hobbies-image;
+        @include bg-image("hobbies/picture-4.jpg", cover);
+    }       
 
-        &:nth-of-type(5){
-            @include bg-image("hobbies/picture-5.jpg", cover);
-        }     
+    &-5{
+        @extend .hobbies-image;
+        @include bg-image("hobbies/picture-5.jpg", cover);
+    }     
 
-        &:nth-of-type(6){
-            @include bg-image("hobbies/picture-6.jpg", cover);
-        }    
+    &-6{
+        @extend .hobbies-image;
+        @include bg-image("hobbies/picture-6.jpg", cover);
 
-        &:nth-of-type(7){
-            @include bg-image("hobbies/picture-7.jpg", cover);
-        }
+        height: 600px;
+    }    
 
+    &-7{
+        @extend .hobbies-image;
+        @include bg-image("hobbies/picture-7.jpg", cover);
+    }
+
+    &-8{
+        @extend .hobbies-image;
+        @include bg-image("hobbies/picture-8.jpg", cover);
+    }    
+
+    &-9{
+        @extend .hobbies-image;
+        @include bg-image("hobbies/picture-9.jpg", cover);
     }
 }
