@@ -243,7 +243,7 @@ ul {
   z-index: 1;
 }
 .hamburger-menu::after {
-  background-image: url("portfolio/assets/img/icons/hamburger-icon.png");
+  background-image: url("/portfolio/assets/img/icons/hamburger-icon.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -307,25 +307,25 @@ ul {
   width: 50px;
 }
 .nav-bar .nav-bar-top .nav-bar-icons .nav-icon.github {
-  background-image: url("portfolio/assets/img/navbar/github-logo.png");
+  background-image: url("/portfolio/assets/img/navbar/github-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .nav-bar .nav-bar-top .nav-bar-icons .nav-icon.codepen {
-  background-image: url("portfolio/assets/img/navbar/codepen-logo.png");
+  background-image: url("/portfolio/assets/img/navbar/codepen-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .nav-bar .nav-bar-top .nav-bar-icons .nav-icon.linkedIn {
-  background-image: url("portfolio/assets/img/navbar/linkedin-logo.png");
+  background-image: url("/portfolio/assets/img/navbar/linkedin-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .nav-bar .nav-bar-top .nav-bar-icons .nav-icon.facebook {
-  background-image: url("portfolio/assets/img/navbar/facebook-logo.png");
+  background-image: url("/portfolio/assets/img/navbar/facebook-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -347,7 +347,7 @@ ul {
 ------------------------------------------- */
 /* Main welcome banner */
 .welcome-banner {
-  background-image: url("portfolio/assets/img/welcomeBanner/welcome-banner-bg.jpg");
+  background-image: url("/portfolio/assets/img/welcomeBanner/welcome-banner-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -431,7 +431,7 @@ ul {
   /* Clickable picture */
 }
 .about-me .click-on-me-pic::after {
-  background-image: url("portfolio/assets/img/aboutMePics/profile-pic.jpg");
+  background-image: url("/portfolio/assets/img/aboutMePics/profile-pic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -471,37 +471,37 @@ ul {
   width: 100%;
 }
 .clients .clients-wrapper .nae {
-  background-image: url("portfolio/assets/img/clients/nae-logo.png");
+  background-image: url("/portfolio/assets/img/clients/nae-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .clients .clients-wrapper .nissan {
-  background-image: url("portfolio/assets/img/clients/nissan-logo.png");
+  background-image: url("/portfolio/assets/img/clients/nissan-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .clients .clients-wrapper .gg {
-  background-image: url("portfolio/assets/img/clients/gosforth-logo.png");
+  background-image: url("/portfolio/assets/img/clients/gosforth-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .clients .clients-wrapper .neccr {
-  background-image: url("portfolio/assets/img/clients/neccr-logo.png");
+  background-image: url("/portfolio/assets/img/clients/neccr-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .clients .clients-wrapper .qrious {
-  background-image: url("portfolio/assets/img/clients/qrious-logo.png");
+  background-image: url("/portfolio/assets/img/clients/qrious-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .clients .clients-wrapper .bookfit {
-  background-image: url("portfolio/assets/img/clients/bookfit-logo.png");
+  background-image: url("/portfolio/assets/img/clients/bookfit-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -527,31 +527,31 @@ ul {
   width: 120px;
 }
 .work-panel .wp-icon-css {
-  background-image: url("portfolio/assets/img/workPanels/css.png");
+  background-image: url("/portfolio/assets/img/workPanels/css.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .work-panel .wp-icon-js {
-  background-image: url("portfolio/assets/img/workPanels/js.png");
+  background-image: url("/portfolio/assets/img/workPanels/js.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .work-panel .wp-icon-scss {
-  background-image: url("portfolio/assets/img/workPanels/scss.png");
+  background-image: url("/portfolio/assets/img/workPanels/scss.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .work-panel .wp-icon-php {
-  background-image: url("portfolio/assets/img/workPanels/php.png");
+  background-image: url("/portfolio/assets/img/workPanels/php.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .work-panel .wp-icon-ajax {
-  background-image: url("portfolio/assets/img/workPanels/ajax.png");
+  background-image: url("/portfolio/assets/img/workPanels/ajax.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -561,7 +561,7 @@ ul {
   list-style: none;
 }
 .work-panel .wp-list li::before {
-  background-image: url("portfolio/assets/img/workPanels/learn-icon.svg");
+  background-image: url("/portfolio/assets/img/workPanels/learn-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

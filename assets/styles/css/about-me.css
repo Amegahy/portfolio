@@ -243,7 +243,7 @@ ul {
   z-index: 1;
 }
 .hamburger-menu::after {
-  background-image: url("portfolio/assets/img/icons/hamburger-icon.png");
+  background-image: url("/portfolio/assets/img/icons/hamburger-icon.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -307,25 +307,25 @@ ul {
   width: 50px;
 }
 .nav-bar .nav-bar-top .nav-bar-icons .nav-icon.github {
-  background-image: url("portfolio/assets/img/navbar/github-logo.png");
+  background-image: url("/portfolio/assets/img/navbar/github-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .nav-bar .nav-bar-top .nav-bar-icons .nav-icon.codepen {
-  background-image: url("portfolio/assets/img/navbar/codepen-logo.png");
+  background-image: url("/portfolio/assets/img/navbar/codepen-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .nav-bar .nav-bar-top .nav-bar-icons .nav-icon.linkedIn {
-  background-image: url("portfolio/assets/img/navbar/linkedin-logo.png");
+  background-image: url("/portfolio/assets/img/navbar/linkedin-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .nav-bar .nav-bar-top .nav-bar-icons .nav-icon.facebook {
-  background-image: url("portfolio/assets/img/navbar/facebook-logo.png");
+  background-image: url("/portfolio/assets/img/navbar/facebook-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -382,7 +382,7 @@ ul {
 ------------------------------------------- */
 /* Cover image container */
 .cover-image {
-  background-image: url("portfolio/assets/img/aboutMePics/cover-image.jpg");
+  background-image: url("/portfolio/assets/img/aboutMePics/cover-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -395,7 +395,7 @@ ul {
   width: 100%;
 }
 .cover-image::after {
-  background-image: url("portfolio/assets/img/aboutMePics/profile-pic.jpg");
+  background-image: url("/portfolio/assets/img/aboutMePics/profile-pic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -436,25 +436,25 @@ ul {
   width: 1rem;
 }
 .bio-list-school::before {
-  background-image: url("portfolio/assets/img/bioIcons/school-icon.svg");
+  background-image: url("/portfolio/assets/img/bioIcons/school-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .bio-list-work::before {
-  background-image: url("portfolio/assets/img/bioIcons/work-icon.svg");
+  background-image: url("/portfolio/assets/img/bioIcons/work-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .bio-list-home::before {
-  background-image: url("portfolio/assets/img/bioIcons/home-icon.svg");
+  background-image: url("/portfolio/assets/img/bioIcons/home-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .bio-list-skills::before {
-  background-image: url("portfolio/assets/img/bioIcons/skills-icon.svg");
+  background-image: url("/portfolio/assets/img/bioIcons/skills-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -479,56 +479,56 @@ ul {
   width: 100%;
 }
 .hobbies-image-1 {
-  background-image: url("portfolio/assets/img/hobbies/picture-1.jpg");
+  background-image: url("/portfolio/assets/img/hobbies/picture-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hobbies-image-2 {
-  background-image: url("portfolio/assets/img/hobbies/picture-2.jpg");
+  background-image: url("/portfolio/assets/img/hobbies/picture-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hobbies-image-3 {
-  background-image: url("portfolio/assets/img/hobbies/picture-3.jpg");
+  background-image: url("/portfolio/assets/img/hobbies/picture-3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hobbies-image-4 {
-  background-image: url("portfolio/assets/img/hobbies/picture-4.jpg");
+  background-image: url("/portfolio/assets/img/hobbies/picture-4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hobbies-image-5 {
-  background-image: url("portfolio/assets/img/hobbies/picture-5.jpg");
+  background-image: url("/portfolio/assets/img/hobbies/picture-5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hobbies-image-6 {
-  background-image: url("portfolio/assets/img/hobbies/picture-6.jpg");
+  background-image: url("/portfolio/assets/img/hobbies/picture-6.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
 }
 .hobbies-image-7 {
-  background-image: url("portfolio/assets/img/hobbies/picture-7.jpg");
+  background-image: url("/portfolio/assets/img/hobbies/picture-7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hobbies-image-8 {
-  background-image: url("portfolio/assets/img/hobbies/picture-8.jpg");
+  background-image: url("/portfolio/assets/img/hobbies/picture-8.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hobbies-image-9 {
-  background-image: url("portfolio/assets/img/hobbies/picture-9.jpg");
+  background-image: url("/portfolio/assets/img/hobbies/picture-9.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
