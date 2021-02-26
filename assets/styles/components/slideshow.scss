@@ -1,0 +1,56 @@
+/* DOCUMENT INFORMATION
+    - Document: All slideshow styling
+    - Author: Alex Megahy
+    - Description: All full screen slideshow styling
+------------------------------------------- */
+
+/* Slideshow container */
+.slideshow-cont {
+    @extend .middle-of-screen;
+
+    background-color: $slideshow-BG;
+    // display: none;
+    display: block;
+
+    .slideshow {
+        .slideshow-image {
+            @include bg-image("hobbies/picture-1.jpg", cover);
+
+            align-items: center;
+            content: "";
+            display: flex;
+            height: 80vw;
+            max-height: $xl-breakpoint;
+            position: relative;
+            width: 100%;
+
+            &::before {
+                @include bg-image("icons/arrow.svg", cover);
+
+                content: "";
+                display: block;
+                height: 5%;
+                position: absolute;
+                right: -2.5%;
+                width: 5%;
+            }
+
+            &::after {
+                @include bg-image("icons/arrow.svg", cover);
+
+                content: "";
+                display: block;
+                height: 5%;
+                left: -2.5%;
+                position: absolute;
+                transform: rotateY(180deg);
+                width: 5%;
+            }
+        }
+    }
+}
+
+/* Show slidehsow */
+.show-slidshow {
+    display: block;
+}
