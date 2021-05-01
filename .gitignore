@@ -1,2 +1,5 @@
 
 *.md
+*.css
+*.config
+!assets/styles/css/index.css
