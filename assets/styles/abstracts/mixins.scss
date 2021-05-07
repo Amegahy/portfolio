@@ -6,63 +6,8 @@
 
 @import 'variables.scss';
 
-/* Typewriter animation for small screens */
-@keyframes typing-wb-small {
-    from { 
-        width: 0;         
-        border-right: $wb-heading-border; 
-    }
-    to { 
-        width: 17em;         
-        border-right: $wb-heading-border; 
-    }
-}
-
-
-/* Typewriter animation for large screens */
-@keyframes typing-wb-large {
-    from { 
-        width: 0;         
-        border-right: $wb-heading-border; 
-    }
-    to { 
-        width: 32em;         
-        border-right: $wb-heading-border; 
-    }
-}
-
-/* Blink caret for typewriter animation */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: $wb-heading-colour }
-}
-
-@mixin keyframes ($animation...){
-    animation: $animation;
-}
-
-/* Force element right */
-@mixin right ($right){
-    position: absolute;
-    right: $right;
-}
-
-/* Force element left */
-@mixin left ($left){
-    position: absolute;
-    left: $left;
-}
-
-/* Full BG Image */
-@mixin bg-image($url, $size){
-    background-image: url($img-dir + $url);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: $size;
-}
-
 /* Full height and width */
-@mixin full($height: 100%, $width: 100%){
-    height: $height;
-    width: $width;
+@mixin centerElement($marginY: 0){
+    display: block;
+    margin: $marginY auto;
 }
